@@ -7,7 +7,8 @@ export default function Layout({ preview, children }) {
     <>
       <Meta />
       <div className="min-h-screen">
-        <Alert preview={preview} />
+        {/* <Alert preview={preview} /> */}
+        {/* Above line makes that top alert appear */}
         <main>{children}</main>
       </div>
       <Footer />
