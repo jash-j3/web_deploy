@@ -6,7 +6,7 @@ export default function Intro() {
       <h1 className="text-white text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
         Lambda
       </h1>
-      <h4 className="text-slate-200 text-center md:text-left text-lg mt-5 md:pl-8">
+      <h4 className="text-slate-300 text-center md:text-left text-lg mt-5 md:pl-8">
         The software development club of IITH</h4>
     </section>
   )

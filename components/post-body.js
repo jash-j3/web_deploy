@@ -1,4 +1,5 @@
 import markdownStyles from './markdown-styles.module.css'
+import { useEffect, useRef } from "react";
 
 export default function PostBody({ content }) {
   return (

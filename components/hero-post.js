@@ -26,10 +26,10 @@ export default function HeroPost({
         <div>
           <h3 className="text-white mb-4 text-4xl lg:text-6xl leading-tight">
             <Link href={`/posts/${slug}`}>
-              <a className="hover:underline">{title}</a>
+              <a className="hover:underline decoration-purple-400 underline-offset-4 cursor-alias">{title}</a>
             </Link>
           </h3>
-          <div className="text-white mb-4 md:mb-0 text-lg">
+          <div className="text-slate-400 mb-4 md:mb-0 text-lg">
             <DateFormatter dateString={date} />
           </div>
         </div>
