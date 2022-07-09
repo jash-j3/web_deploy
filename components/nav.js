@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Image } from "next/image"
 import lambdaImage from "../public/Lambda-Banner.png"
+import Link from "next/link";
 
 export default function Nav () {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,14 +11,13 @@ export default function Nav () {
           <div class="relative flex items-center justify-between lg:justify-center lg:space-x-16">
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li>
-                <a
-                  href="/"
+                <Link
+                  href="/team"
                   aria-label="Our product"
                   title="Our product"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
-                  Product
-                </a>
+                  <a className ="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Team</a>
+                </Link>
               </li>
               <li>
                 <a
