@@ -1,9 +1,10 @@
 import Image from "next/image";
+import GithubIcon from "./icons/github";
 
 export default function Card({ title, description, imgSrc }) {
   return (
     <>
-      <div className="p-4 min-w-[33%] max-w-[50%]">
+      <div className="p-4 mt-4 mb-4 min-w-[33%] max-w-[50%] rounded-lg border-2 border-white">
         <Image
           src={imgSrc}
           alt={`Cover Image for ${title}`}
@@ -15,6 +16,7 @@ export default function Card({ title, description, imgSrc }) {
           {title}
         </h1>
         <p className="mb-3 dark:text-gray-400">{description}</p>
+        <GithubIcon />
       </div>
     </>
   );
