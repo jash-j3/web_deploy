@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import Head from "next/head";
 import HomeRedirect from "../components/home-redirect";
 import Container from "../components/container";
+import HorizontalRule from "../components/HorizontalRule";
 
 export default function About() {
   return (
@@ -15,7 +16,7 @@ export default function About() {
           <h1 className="text-3xl sm:text-4xl md:text-6xl dark:text-gray-100 font-extrabold leading-9 sm:leading-10 md:leading-14 tracking-tight pb-2">
             About
           </h1>
-          <div className="flex-grow border-t border-purple-400"></div>
+          <HorizontalRule />
           <p className="pt-5 text-sm sm:text-base md:text-lg dark:text-gray-100 sm:leading-10 md:leading-14 tracking-tight">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
             elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin
