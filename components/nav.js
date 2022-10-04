@@ -10,7 +10,7 @@ export default function Nav() {
         <div className="hidden sm:block">
           <ul className="flex flex-row justify-center items-center font-medium text-gray-100">
             <li className="mx-10 hover:text-purple-200">
-              <Link href="/about" aria-label="" title="">
+              <Link href="/" aria-label="" title="">
                 <a className="">About</a>
               </Link>
             </li>

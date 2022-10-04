@@ -58,6 +58,7 @@ export default function Projects() {
           <div className="flex flex-wrap pt-5 -m-4 mb-4">
             {projects.map((project) => (
               <Card
+                key={project.title}
                 imgSrc={project.imgSrc}
                 title={project.title}
                 description={project.description}
