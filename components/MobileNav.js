@@ -18,7 +18,7 @@ export default function MobileNav() {
         document.body.style.overflow = "auto";
       } else {
         // Prevent scrolling
-        document.body.style.overflow = "hidden";
+        // document.body.style.overflow = "hidden";
       }
       return !isOpen;
     });

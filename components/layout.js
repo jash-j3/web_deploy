@@ -8,10 +8,7 @@ export default function Layout({ children }) {
     <>
       <Meta />
       <Nav />
-      <div
-        className="min-h-screen"
-        style={{ width: "100%", height: "0.5rem", overflow: "visible" }}
-      >
+      <div className="min-h-screen">
         <main>{children}</main>
       </div>
       <Footer />
