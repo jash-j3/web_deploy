@@ -3,10 +3,17 @@
 }
 
 .markdown p,
-.markdown ul,
-.markdown ol,
 .markdown blockquote {
   @apply my-6;
+}
+
+.markdown ul {
+  @apply my-6 list-disc;
+  /* list-style-type: square; */
+}
+
+.markdown ol {
+  @apply my-6 list-decimal;
 }
 
 .markdown h2 {
@@ -15,4 +22,8 @@
 
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
+}
+
+.markdown a {
+  @apply text-purple-400 underline;
 }
