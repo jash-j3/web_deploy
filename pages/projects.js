@@ -20,7 +20,7 @@ export default function Projects() {
             Projects
           </h1>
           <HorizontalRule />
-          <div className="flex flex-row flex-wrap pt-5">
+          <div className="flex flex-wrap pt-5 -m-4 mb-4">
             <Card
               imgSrc={
                 "https://cdn.searchenginejournal.com/wp-content/uploads/2022/08/linkedin-link-stickers-62f1772754c2e-sej-1520x800.png"
@@ -40,7 +40,9 @@ export default function Projects() {
                 "https://cdn.searchenginejournal.com/wp-content/uploads/2022/08/linkedin-link-stickers-62f1772754c2e-sej-1520x800.png"
               }
               title={"Project 1"}
-              description={"This is a project"}
+              description={
+                "tristique placerat feugiat ac, facilisis vitae arcu. Proi. tristique placerat feugiat ac, facilisis vitae arcu. Proi"
+              }
             />
             <Card
               imgSrc={
