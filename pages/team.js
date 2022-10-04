@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Head from "next/head";
 import HomeRedirect from "../components/home-redirect";
 import Link from "next/link";
+import HorizontalRule from "../components/HorizontalRule";
 
 // people[0] -> mentors
 // people[1] -> coords
@@ -49,14 +50,18 @@ export default function Team() {
         <Container>
           <HomeRedirect />
           {/* <Table teamMembers={teamMembers} /> */}
-          <div className="flex flex-col items-center justify-center">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl dark:text-gray-100 font-extrabold leading-9 sm:leading-10 md:leading-14 tracking-tight pb-2">
+            Team
+          </h1>
+          <HorizontalRule />
+          <div className="flex flex-col items-center justify-center mt-4">
             {people.map((role, index) => (
               <>
-                <div className="container mx-auto px-5 text-purple-400 text-xl">
+                <div className="container mx-auto px-5 text-purple-400 text-lg md:text-xl">
                   {rolename[index]}
                   <div className="container mx-auto px-5 text-white text-lg">
                     {" "}
-                    <ul className="list-disc pt-2 pl-2 pb-4">
+                    <ul className="list-disc pt-2 pl-2 pb-4 text-base md:text-lg">
                       {role.map((person) => (
                         <>
                           <li>
