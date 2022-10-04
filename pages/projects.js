@@ -5,7 +5,42 @@ import HomeRedirect from "../components/home-redirect";
 import Card from "../components/card";
 import HorizontalRule from "../components/HorizontalRule";
 
-const projects = [];
+import lambdaImage from "/public/static/images/Lambda-Banner.png";
+
+const projects = [
+  {
+    title: "IITH Dashboard",
+    description:
+      "An android app for IITH students to view the mess, transport and academic details.",
+    repositoryLink: "https://github.com/LambdaIITH/IITH-Dashboard-Android",
+    imgSrc: "/static/images/projects/iith-dashboard.png",
+  },
+  {
+    title: "IITH Dashboard PWA",
+    description: "Dashboard as a Progressive Web App for cross platform usage.",
+    repositoryLink: "https://github.com/LambdaIITH/iith-dashboard-pwa",
+    imgSrc: "/static/images/projects/iith-dashboard.png",
+  },
+  {
+    title: "AIMS Helper Chrome",
+    description:
+      "A cross-browser helper extension to generate time table and grade card from AIMS portal.",
+    repositoryLink: "https://github.com/LambdaIITH/AIMS-Helper-Chrome",
+    imgSrc: "/static/images/projects/aims-logo.png",
+  },
+  {
+    title: "Lambda Blog",
+    description: "The blog for Lambda - The Software Development Club of IITH.",
+    repositoryLink: "https://github.com/LambdaIITH/website",
+    imgSrc: "/static/images/projects/lambda_logo.jpg",
+  },
+  {
+    title: "Infero Blog",
+    description: "The blog for Infero - The Competitive Coding Club of IITH.",
+    repositoryLink: "https://github.com/LambdaIITH/InferoBlog",
+    imgSrc: "/static/images/projects/lambda_logo.jpg",
+  },
+];
 
 export default function Projects() {
   return (
@@ -21,50 +56,14 @@ export default function Projects() {
           </h1>
           <HorizontalRule />
           <div className="flex flex-wrap pt-5 -m-4 mb-4">
-            <Card
-              imgSrc={
-                "https://cdn.searchenginejournal.com/wp-content/uploads/2022/08/linkedin-link-stickers-62f1772754c2e-sej-1520x800.png"
-              }
-              title={"Project 1"}
-              description={"This is a project"}
-            />
-            <Card
-              imgSrc={
-                "https://cdn.searchenginejournal.com/wp-content/uploads/2022/08/linkedin-link-stickers-62f1772754c2e-sej-1520x800.png"
-              }
-              title={"Project 1"}
-              description={"This is a project"}
-            />
-            <Card
-              imgSrc={
-                "https://cdn.searchenginejournal.com/wp-content/uploads/2022/08/linkedin-link-stickers-62f1772754c2e-sej-1520x800.png"
-              }
-              title={"Project 1"}
-              description={
-                "tristique placerat feugiat ac, facilisis vitae arcu. Proi. tristique placerat feugiat ac, facilisis vitae arcu. Proi"
-              }
-            />
-            <Card
-              imgSrc={
-                "https://cdn.searchenginejournal.com/wp-content/uploads/2022/08/linkedin-link-stickers-62f1772754c2e-sej-1520x800.png"
-              }
-              title={"Project 1"}
-              description={"This is a project"}
-            />
-            <Card
-              imgSrc={
-                "https://cdn.searchenginejournal.com/wp-content/uploads/2022/08/linkedin-link-stickers-62f1772754c2e-sej-1520x800.png"
-              }
-              title={"Project 1"}
-              description={"This is a project"}
-            />
-            <Card
-              imgSrc={
-                "https://cdn.searchenginejournal.com/wp-content/uploads/2022/08/linkedin-link-stickers-62f1772754c2e-sej-1520x800.png"
-              }
-              title={"Project 1"}
-              description={"This is a project"}
-            />
+            {projects.map((project) => (
+              <Card
+                imgSrc={project.imgSrc}
+                title={project.title}
+                description={project.description}
+                repositoryLink={project.repositoryLink}
+              />
+            ))}
           </div>
         </Container>
       </Layout>

@@ -1,7 +1,7 @@
 ---
 title: "Getting started with Hacktober 2022"
 excerpt: "Contributing to a quality piece of open source software can be a great learning experience. Keeping this in mind Hacktoberfest is conducted every year. It is open to everyone and is aimed to encourage involvement in the open source community."
-coverImage: "/assets/blog/hacktober/hacktober.png.webp"
+coverImage: "/static/images/blog/hacktober/hacktober.png.webp"
 date: "2022-10-01T05:35:07.322Z"
 author:
   name: Lambda IITH

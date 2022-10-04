@@ -1,7 +1,7 @@
 import Image from "next/image";
 import GithubIcon from "./icons/github";
 
-export default function Card({ title, description, imgSrc }) {
+export default function Card({ title, description, imgSrc, repositoryLink }) {
   return (
     <>
       {/* <div className="basic-1/3 md:basis-1/4 p-4 m-4 min-w-[30%] max-w-[50%] rounded-lg border-2 border-white"> */}
@@ -17,7 +17,7 @@ export default function Card({ title, description, imgSrc }) {
           {title}
         </h1>
         <p className="mb-3 dark:text-gray-400">{description}</p>
-        <GithubIcon />
+        <GithubIcon repositoryLink={repositoryLink} />
       </div>
     </>
   );

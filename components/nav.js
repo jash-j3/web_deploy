@@ -1,4 +1,4 @@
-import lambdaImage from "../public/Lambda-Banner.png";
+import lambdaImage from "../public/static/images/Lambda-Banner.png";
 import Link from "next/link";
 import { Image } from "next/image";
 import MobileNav from "./MobileNav";

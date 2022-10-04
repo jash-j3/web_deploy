@@ -8,18 +8,26 @@ import HorizontalRule from "../components/HorizontalRule";
 
 // people[0] -> mentors
 // people[1] -> coords
-// people[2] -> cores
+// people[2] -> senior cores
+// people[3] -> cores
+
+// Harsha
+// DEVULAPALLI SAI PRACHODHAN
+// R V B R N AASEESH
+// Pragna Mamidipaka
+// Arun Siddardha
+
 const people = [
   [
     {
       name: "Divyansh Kharbanda",
       contact: "ep19btech11002@iith.ac.in",
-      githubUsername: "Aayush2492",
+      githubUsername: "DivyanshK12",
     },
     {
       name: "Rachit Keerti Das",
       contact: "cs19btech@iith.ac.in",
-      githubUsername: "Aayush2492",
+      githubUsername: "RachitKeertiDas",
     },
   ],
   [
@@ -31,12 +39,136 @@ const people = [
     {
       name: "Vikhyath K.",
       contact: "cs19btech@iith.ac.in",
-      githubUsername: "Aayush2492",
+      githubUsername: "Vikhyath-vec",
+    },
+  ],
+  [
+    {
+      name: "Harsha",
+      githubUsername: "",
+    },
+    {
+      name: "DEVULAPALLI SAI PRACHODHAN",
+      githubUsername: "",
+    },
+    {
+      name: "R V B R N AASEESH",
+      githubUsername: "",
+    },
+    {
+      name: "Pragna Mamidipaka",
+      githubUsername: "",
+    },
+    {
+      name: "Arun Siddardha",
+      githubUsername: "",
+    },
+  ],
+  [
+    {
+      name: "Dishank",
+      githubUsername: "",
+    },
+    {
+      name: "Gunjit Mittal",
+      githubUsername: "",
+    },
+    {
+      name: "Himanshu Kumar Gupta",
+      githubUsername: "",
+    },
+    {
+      name: "Boda Premchand",
+      githubUsername: "",
+    },
+    {
+      name: "Jaswanth Beere",
+      githubUsername: "",
+    },
+    {
+      name: "Ganesh Bombatkar",
+      githubUsername: "",
+    },
+    {
+      name: "K Vivek Kumar",
+      githubUsername: "",
+    },
+    {
+      name: "Maharshi Kadeval",
+      githubUsername: "",
+    },
+    {
+      name: "Kartheek Sriram Tammana",
+      githubUsername: "",
+    },
+    {
+      name: "Kushagra Gupta",
+      githubUsername: "",
+    },
+    {
+      name: "Rahul Ramachandran",
+      githubUsername: "",
+    },
+    {
+      name: "Rishit D",
+      githubUsername: "",
+    },
+    {
+      name: "Suryaansh Jain",
+      githubUsername: "",
+    },
+    {
+      name: "Varun Gupta",
+      githubUsername: "",
+    },
+    {
+      name: "Gaurang Dahad",
+      githubUsername: "",
+    },
+    {
+      name: "Dheeraj M",
+      githubUsername: "",
+    },
+    {
+      name: "Shreya Kumar",
+      githubUsername: "",
+    },
+    {
+      name: "Prajwaldeep Kamble",
+      githubUsername: "",
+    },
+    {
+      name: "Mallina Sri Pranav Seshu",
+      githubUsername: "",
+    },
+    {
+      name: "Rutv Kocheta",
+      githubUsername: "",
+    },
+    {
+      name: "Kartik Kalia",
+      githubUsername: "",
+    },
+    {
+      name: "Pradeep Mundlik",
+      githubUsername: "",
+    },
+    {
+      name: "Ankit Saha",
+      githubUsername: "",
+    },
+    {
+      name: "Prerit Yadav",
+      githubUsername: "",
+    },
+    {
+      name: "Kartik Srinivas",
+      githubUsername: "",
     },
   ],
 ];
 
-const rolename = ["Mentors", "Coordinators", "Cores"];
+const rolename = ["Mentors", "Coordinators", "Senior Cores", "Cores"];
 
 const cores = [];
 
@@ -70,7 +202,10 @@ export default function Team() {
                                 "https://github.com/" + person.githubUsername
                               }
                             >
-                              <a className="hover:underline hover:text-purple-400">
+                              <a
+                                className="hover:underline hover:text-purple-400"
+                                target="_blank"
+                              >
                                 {person.name}
                               </a>
                             </Link>

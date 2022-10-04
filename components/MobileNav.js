@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import lambdaImage from "../public/Lambda-Banner.png";
+import lambdaImage from "../public/static/images/Lambda-Banner.png";
 
 const navbarLinks = [
   { title: "About", href: "/about" },
