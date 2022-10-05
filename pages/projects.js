@@ -4,10 +4,28 @@ import Container from "../components/container";
 import HomeRedirect from "../components/home-redirect";
 import Card from "../components/card";
 import HorizontalRule from "../components/HorizontalRule";
-
-import lambdaImage from "/public/static/images/Lambda-Banner.png";
+import Link from "next/link";
 
 const projects = [
+  {
+    title: "Lambda Blog",
+    description: "The blog for Lambda - The Software Development Club of IITH.",
+    repositoryLink: "https://github.com/LambdaIITH/website",
+    imgSrc: "/static/images/projects/lambda_logo.png",
+  },
+  {
+    title: "Infero Blog",
+    description: "The blog for Infero - The Competitive Coding Club of IITH.",
+    repositoryLink: "https://github.com/LambdaIITH/InferoBlog",
+    imgSrc: "/static/images/projects/infero_logo.png",
+  },
+  {
+    title: "AIMS Helper Chrome",
+    description:
+      "A cross-browser helper extension to generate time table and grade card from AIMS portal.",
+    repositoryLink: "https://github.com/LambdaIITH/AIMS-Helper-Chrome",
+    imgSrc: "/static/images/projects/iithyd-logo.jpg",
+  },
   {
     title: "IITH Dashboard",
     description:
@@ -20,25 +38,6 @@ const projects = [
     description: "Dashboard as a Progressive Web App for cross platform usage.",
     repositoryLink: "https://github.com/LambdaIITH/iith-dashboard-pwa",
     imgSrc: "/static/images/projects/iith-dashboard.png",
-  },
-  {
-    title: "AIMS Helper Chrome",
-    description:
-      "A cross-browser helper extension to generate time table and grade card from AIMS portal.",
-    repositoryLink: "https://github.com/LambdaIITH/AIMS-Helper-Chrome",
-    imgSrc: "/static/images/projects/aims-logo.png",
-  },
-  {
-    title: "Lambda Blog",
-    description: "The blog for Lambda - The Software Development Club of IITH.",
-    repositoryLink: "https://github.com/LambdaIITH/website",
-    imgSrc: "/static/images/projects/lambda_logo.jpg",
-  },
-  {
-    title: "Infero Blog",
-    description: "The blog for Infero - The Competitive Coding Club of IITH.",
-    repositoryLink: "https://github.com/LambdaIITH/InferoBlog",
-    imgSrc: "/static/images/projects/lambda_logo.jpg",
   },
 ];
 

@@ -29,7 +29,14 @@ Contributing to a quality piece of open source software can be a great learning 
 
 The first 40,000 participants (maintainers and contributors) who complete Hacktoberfest can elect to receive one of two prizes: a tree planted in their name, or the Hacktoberfest 2022 t-shirt.
 
+## Lambda repos _hacktober_ labelled!
+
+In the spirit of hacktober fest Lambda is also taking part as a maintainer in hacktober fest. Think a feature is missing in AIMS extension? Create a PR for it. You can choose any one of the repo stated below depending upon the tech stack and submit PR.
+
+Link to our Github repos: [LambdaIITH](https://www.github.com/LambdaIITH)
+
 ## Resources
 
-- To get started you can refer to [this](https://github.com/mungell/awesome-for-beginners) list of repositories sorted by the programming language.
+- To get started you can refer to [this](https://github.com/mungell/awesome-for-beginners) list of repositories sorted by the programming language. Look for issues that are labelled as _good_first_issue_ or _beginner_friendly_.
 - Or you can filter out the repositories [here](https://github.com/topics/hacktoberfest).
+- The official [Hacktober fest](https://hacktoberfest.com/participation/#maintainers/) site.
