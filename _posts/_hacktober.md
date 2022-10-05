@@ -38,5 +38,8 @@ Link to our Github repos: [LambdaIITH](https://www.github.com/LambdaIITH)
 ## Resources
 
 - To get started you can refer to [this](https://github.com/mungell/awesome-for-beginners) list of repositories sorted by the programming language. Look for issues that are labelled as _good_first_issue_ or _beginner_friendly_.
-- Or you can filter out the repositories [here](https://github.com/topics/hacktoberfest).
-- The official [Hacktober fest](https://hacktoberfest.com/participation/#maintainers/) site.
+- Search for repositories by language, using [this](https://hacktoberfest-projects.vercel.app/) site!
+- Or you can filter out all the "hacktoberfest" repositories [here](https://github.com/topics/hacktoberfest).
+- The official [Hacktober fest](https://hacktoberfest.com/participation/#maintainers/) site
+- Blogs by [DigitalOcean](https://www.digitalocean.com/blog/hacktoberfest-2022-your-mission-for-open-source), [ServiceNow](https://developer.servicenow.com/blog.do?p=/post/hacktoberfest-2022/)
+- To fish for swag, do check out swag lists: [hacktoberfestswaglist.com](https://hacktoberfestswaglist.com/), [hacktoberfest-swag.com](https://hacktoberfest-swag.com/). P.S. Be sure you are looking to add something of substance to the projects, not just spam PRs.
