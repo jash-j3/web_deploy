@@ -31,9 +31,11 @@ The first 40,000 participants (maintainers and contributors) who complete Hackto
 
 ## Lambda repos _hacktober_ labelled!
 
-In the spirit of hacktober fest Lambda is also taking part as a maintainer in hacktober fest. Think a feature is missing in AIMS extension? Create a PR for it. You can choose any one of the repo stated below depending upon the tech stack and submit PR.
+In the spirit of hacktober fest Lambda is also taking part as a maintainer in hacktober fest. Browse through the issue of an existing repo, think you can resolve it? Create a PR for it, think a feature is missing from the AIMS extension? Create a PR for it, Don't like the design of a particular component? Create a PR for it.
 
 Link to our Github repos: [LambdaIITH](https://www.github.com/LambdaIITH)
+
+Join this [whatsapp group](https://chat.whatsapp.com/F0qEQo5JlI0HlhdVc3wWFq) to discuss with other participating in the event.
 
 ## Resources
 
