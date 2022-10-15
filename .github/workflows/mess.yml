@@ -1,0 +1,44 @@
+# This workflow updates the mess menu once a week.
+#
+name: Update Mess Menu
+
+on:
+  schedule:
+  - cron: '15 6 * * 1'
+  workflow_dispatch: 
+
+jobs:
+  update_mess:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Deps
+        run : |
+          sudo apt install jq
+          pip install gspread
+          pip install numpy
+          pip install oauth2client
+      - name: Checkout Backend Repository
+        uses: actions/checkout@v3
+        with:
+          repository: LambdaIITH/iith-dashboard-backend
+          path: ./iith-dashboard-backend
+      - name: Copy Service Account Creds
+        run: jq -n '${{ secrets.BUS_PARSER_SERVICE_ACCOUNT_CREDS }}' > iith-dashboard-backend/bus-menu-scripts/credentials.json
+      - name: Run Mess Script 
+        run: cd iith-dashboard-backend/bus-menu-scripts/ && python3 mess.py
+      - name: Copy it into correct places
+        run: |
+          cp iith-dashboard-backend/bus-menu-scripts/mess.json public/dining.json
+          cp iith-dashboard-backend/bus-menu-scripts/mess.json public/dining
+          cp iith-dashboard-backend/bus-menu-scripts/mess.json public/v2/dining
+          cp iith-dashboard-backend/bus-menu-scripts/mess.json public/v2/dining.json
+      - name: Commit and Deploy
+        run : |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add public/
+          git commit -m "Update Mess Menu"
+          git push origin 
+

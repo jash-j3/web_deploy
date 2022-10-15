@@ -2,646 +2,675 @@
     "LDH": {
         "Sunday": {
             "Breakfast": [
-                "Aloo Paratha",
-                "Pudina Chutney",
+                "Aloo paratha",
+                "Pudina chutney",
                 "Curd",
-                "Butter (Limited Quantity)",
+                "Butter (limited quantity)",
                 "Mix veg pickle",
-                "bournvita",
-                "Boiled Peanuts",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Bournvita",
+                "Boiled peanuts",
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
                 "Phulka",
                 "Masoor dal",
-                "Kerala Onion Sambar",
-                "Mutter Do Pyaza",
-                "Tindora Fry",
+                "Kerala onion sambar",
+                "Mutter do pyaza",
+                "Tindora fry",
                 "Gongura",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad ()"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Ginger Tea"
+                "Ginger tea"
             ],
             "Dinner": [
                 "Phulka",
-                "rajma",
-                "Mirch ka Salan (add-on for biryani)",
-                "veg korma",
-                "Lemon Coriander Rasam",
-                "Chicken/Paneer Dum \n Biryani \n (200gm Chicken/100gm Paneer)",
-                "onion raita",
-                "Gongura-Green Chilly",
+                "Rajma",
+                "Mirch ka salan (add-on for biryani)",
+                "Veg korma",
+                "Lemon coriander rasam",
+                "Chicken/paneer dum  biryani  (200gm chicken/100gm paneer)",
+                "Onion raita",
+                "Gongura-green chilly",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         },
         "Monday": {
             "Breakfast": [
                 "Idli",
-                "Coconut Chutney\n Sambar",
-                "Addon (Onion Chutney)",
-                "horlicks",
+                "Coconut chutney sambar",
+                "Addon (onion chutney)",
+                "Horlicks",
                 "Boiled green gram",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
-                "Ghee Roti",
+                "Ghee roti",
                 "Dal makani",
-                "Plain Sambar",
-                "Patodi Masala",
+                "Plain sambar",
+                "Patodi masala",
                 "Aloo chips",
                 "Watermelon",
-                "Mango/Avakay",
+                "Mango/avakay",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Elaichi Tea",
-                "Ginger Tea"
+                "Elaichi tea",
+                "Ginger tea"
             ],
             "Dinner": [
-                "Pudhina Roti",
+                "Pudhina roti",
                 "Channa dal fry",
-                "Bendi Peanut Fry",
-                "Aloo Tomato Sabzi",
+                "Bendi peanut fry",
+                "Aloo tomato sabzi",
                 "Pachipulusu",
-                "tomato",
+                "Tomato",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         },
         "Tuesday": {
             "Breakfast": [
                 "Vada",
                 "Pongal",
-                "Sambar and Peanut Chutney",
-                "Addon (Ginger Chutney)",
-                "boost",
+                "Sambar and peanut chutney",
+                "Addon (ginger chutney)",
+                "Boost",
                 "Sprouts",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
-                "Pudina Roti",
+                "Pudina roti",
                 "Dal tadka",
-                "Aravi Sambar",
-                "Brinjal Curry (Vankai Pulusu",
-                "Capsicum Onion Fry",
+                "Aravi sambar",
+                "Brinjal curry (vankai pulusu",
+                "Capsicum onion fry",
                 "Ginger",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Masala Tea",
-                "Ginger Tea"
+                "Masala tea",
+                "Ginger tea"
             ],
             "Dinner": [
-                "Ghee Roti",
+                "Ghee roti",
                 "Dal panchmahal",
-                "Aloo Deep Fry",
-                "Veg manchurian ( semi Dry)",
-                "ginger rasam",
-                "Veg Fried Rice",
-                "gulab jamun",
+                "Aloo deep fry",
+                "Veg manchurian ( semi dry)",
+                "Ginger rasam",
+                "Veg fried rice",
+                "Gulab jamun",
                 "Onion",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         },
         "Wednesday": {
             "Breakfast": [
-                "Uthappam (with onions",
-                "carrot) With Peanut Chutney + Sambar + Addon (Karam Podi)",
-                "bournvita",
-                "Boiled Chana",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Uthappam (with onions, carrot) with peanut chutney",
+                "Sambar",
+                "Addon (karam podi)",
+                "Bournvita",
+                "Boiled chana",
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
-                "Ghee Roti",
-                "rajma",
-                "Tamilnadu Sambar",
-                "Kadai Veg",
-                "keerai kootu",
+                "Ghee roti",
+                "Rajma",
+                "Tamilnadu sambar",
+                "Kadai veg",
+                "Keerai kootu",
                 "Papaya",
                 "Gongura",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Ginger Tea",
-                "Ginger Tea"
+                "Ginger tea",
+                "Ginger tea"
             ],
             "Dinner": [
-                "Missi Roti",
+                "Missi roti",
                 "Lasooni dal tadka",
-                "Soya Bean Fry",
-                "Chetinadu egg Curry (1)/ Kadai Paneer (paneer: 30gms)",
-                "Tomato Rasam",
-                "Mint/Pudina",
+                "Soya bean fry",
+                "Chetinadu egg curry (1)/ kadai paneer (paneer: 30gms)",
+                "Tomato rasam",
+                "Mint/pudina",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         },
         "Thursday": {
             "Breakfast": [
-                "Pav Bhaji",
-                "Addons ( Chopped Onions with lemon)",
-                "boost",
+                "Pav bhaji",
+                "Addons ( chopped onions with lemon)",
+                "Boost",
                 "Boiled green gram",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
-                "Methi Roti",
+                "Methi roti",
                 "Dal fry",
-                "Drum Stick Sambar",
-                "Turai Chana",
-                "carrot peas poriyal",
-                "Mango/Avakay",
+                "Drum stick sambar",
+                "Turai chana",
+                "Carrot peas poriyal",
+                "Mango/avakay",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Elaichi Tea",
-                "Ginger Tea"
+                "Elaichi tea",
+                "Ginger tea"
             ],
             "Dinner": [
                 "Phulka",
-                "Gongura Dal",
+                "Gongura dal",
                 "Beetroot fry",
-                "mix-veg kadai",
-                "Pappu Charu",
-                "Veg Pulao",
+                "Mix-veg kadai",
+                "Pappu charu",
+                "Veg pulao",
                 "Payasam",
                 "Tomato",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         },
         "Friday": {
             "Breakfast": [
-                "poha (with sev)",
+                "Poha (with sev)",
                 "Addon (mint chutney)",
-                "Mysore Bajji",
-                "groundnut chutney",
-                "horlicks",
+                "Mysore bajji",
+                "Groundnut chutney",
+                "Horlicks",
                 "Sprouts",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
-                "Ghee Roti",
+                "Ghee roti",
                 "Palak dal",
-                "Radish Sambar",
-                "Corn Palak Masala",
-                "Cabbage Poriyal",
-                "Fruit Custard",
+                "Radish sambar",
+                "Corn palak masala",
+                "Cabbage poriyal",
+                "Fruit custard",
                 "Redchilly",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Masala Tea",
-                "Ginger Tea"
+                "Masala tea",
+                "Ginger tea"
             ],
             "Dinner": [
-                "Ghee Roti",
+                "Ghee roti",
                 "Tomato dal",
                 "Bitterguard fry",
-                "Tomato onion egg (gravy) (1)/ Paneer Butter Masala (paneer: 30gms)",
-                "Mango/Ginger Rasam",
-                "Gongura-Green Chilly",
+                "Tomato onion egg (gravy) (1)/ paneer butter masala (paneer: 30gms)",
+                "Mango/ginger rasam",
+                "Gongura-green chilly",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         },
         "Saturday": {
             "Breakfast": [
-                "Plain Dosa",
-                "Bombay Chutney (with onions) Peanut Chutney",
+                "Plain dosa",
+                "Bombay chutney (with onions) peanut chutney",
                 "Sambar",
-                "bournvita",
-                "Boiled Chana",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Bournvita",
+                "Boiled chana",
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
-                "Pudina Roti",
+                "Pudina roti",
                 "Moong dal",
-                "Mixed Veg Sambar",
-                "Dum Aloo Curry",
-                "Raw Banana Fry",
+                "Mixed veg sambar",
+                "Dum aloo curry",
+                "Raw banana fry",
                 "Lemon rice",
                 "Ginger",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Ginger Tea",
-                "Ginger Tea"
+                "Ginger tea",
+                "Ginger tea"
             ],
             "Dinner": [
-                "Totakura Dal",
-                "Veg Jalferzi",
-                "Chole Masala",
-                "Pepper Rasam",
+                "Totakura dal",
+                "Veg jalferzi",
+                "Chole masala",
+                "Pepper rasam",
                 "Bhatura",
-                "jalebi",
+                "Jalebi",
                 "Onion",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         }
     },
     "UDH": {
         "Sunday": {
             "Breakfast": [
-                "Aloo Paratha",
-                "Pudina Chutney",
+                "Aloo paratha",
+                "Pudina chutney",
                 "Curd",
-                "Butter (Limited Quantity)",
+                "Butter (limited quantity)",
                 "Mix veg pickle",
-                "bournvita",
-                "Boiled Peanuts",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Bournvita",
+                "Boiled peanuts",
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
                 "Phulka",
                 "Masoor dal",
-                "Kerala Onion Sambar",
-                "Mutter Do Pyaza",
-                "Tindora Fry",
+                "Kerala onion sambar",
+                "Mutter do pyaza",
+                "Tindora fry",
                 "Gongura",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Ginger Tea"
+                "Ginger tea"
             ],
             "Dinner": [
                 "Phulka",
-                "rajma",
-                "Mirch ka Salan (add-on for biryani)",
-                "veg korma",
-                "Lemon Coriander Rasam",
-                "Chicken/Paneer Dum Biryani (200gm Chicken/100gm Paneer)",
-                "onion raita",
-                "Gongura-Green Chilly",
+                "Rajma",
+                "Mirch ka salan (add-on for biryani)",
+                "Veg korma",
+                "Lemon coriander rasam",
+                "Chicken/paneer dum  biryani  (200gm chicken/100gm paneer)",
+                "Onion raita",
+                "Gongura-green chilly",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         },
         "Monday": {
             "Breakfast": [
                 "Idli",
-                "Coconut Chutney Sambar",
-                "Addon (Onion Chutney)",
-                "horlicks",
+                "Coconut chutney sambar",
+                "Addon (onion chutney)",
+                "Horlicks",
                 "Boiled green gram",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
-                "Ghee Roti",
+                "Ghee roti",
                 "Dal makani",
-                "Plain Sambar",
-                "Patodi Masala",
+                "Plain sambar",
+                "Patodi masala",
                 "Aloo chips",
                 "Watermelon",
-                "Mango/Avakay",
+                "Mango/avakay",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Elaichi Tea",
-                "Ginger Tea"
+                "Elaichi tea",
+                "Ginger tea"
             ],
             "Dinner": [
-                "Pudhina Roti",
+                "Pudhina roti",
                 "Channa dal fry",
-                "Bendi Peanut Fry",
-                "Aloo Tomato Sabzi",
+                "Bendi peanut fry",
+                "Aloo tomato sabzi",
                 "Pachipulusu",
-                "tomato",
+                "Tomato",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         },
         "Tuesday": {
             "Breakfast": [
                 "Vada",
                 "Pongal",
-                "Sambar and Peanut Chutney",
-                "Addon (Ginger Chutney)",
-                "boost",
+                "Sambar and peanut chutney",
+                "Addon (ginger chutney)",
+                "Boost",
                 "Sprouts",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
-                "Pudina Roti",
+                "Pudina roti",
                 "Dal tadka",
-                "Aravi Sambar",
-                "Brinjal Curry (Vankai Pulusu",
-                "Capsicum Onion Fry",
+                "Aravi sambar",
+                "Brinjal curry (vankai pulusu",
+                "Capsicum onion fry",
                 "Ginger",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Masala Tea",
-                "Ginger Tea"
+                "Masala tea",
+                "Ginger tea"
             ],
             "Dinner": [
-                "Ghee Roti",
+                "Ghee roti",
                 "Dal panchmahal",
-                "Aloo Deep Fry",
-                "Veg manchurian ( semi Dry)",
-                "ginger rasam",
-                "Veg Fried Rice",
-                "gulab jamun",
+                "Aloo deep fry",
+                "Veg manchurian ( semi dry)",
+                "Ginger rasam",
+                "Veg fried rice",
+                "Gulab jamun",
                 "Onion",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         },
         "Wednesday": {
             "Breakfast": [
-                "Uthappam (with onions",
-                "carrot) With Peanut Chutney + Sambar + Addon (Karam Podi)",
-                "bournvita",
-                "Boiled Chana",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Uthappam (with onions, carrot) with peanut chutney",
+                "Sambar",
+                "Addon (karam podi)",
+                "Bournvita",
+                "Boiled chana",
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
-                "Ghee Roti",
-                "rajma",
-                "Tamilnadu Sambar",
-                "Kadai Veg",
-                "keerai kootu",
+                "Ghee roti",
+                "Rajma",
+                "Tamilnadu sambar",
+                "Kadai veg",
+                "Keerai kootu",
                 "Papaya",
                 "Gongura",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Ginger Tea",
-                "Ginger Tea"
+                "Ginger tea",
+                "Ginger tea"
             ],
             "Dinner": [
-                "Missi Roti",
+                "Missi roti",
                 "Lasooni dal tadka",
-                "Soya Bean Fry",
-                "Chetinadu egg Curry (1)/ Kadai Paneer (paneer: 30gms)",
-                "Tomato Rasam",
-                "Mint/Pudina",
+                "Soya bean fry",
+                "Chetinadu egg curry (1)/ kadai paneer (paneer: 30gms)",
+                "Tomato rasam",
+                "Mint/pudina",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         },
         "Thursday": {
             "Breakfast": [
-                "Pav Bhaji",
-                "Addons ( Chopped Onions with lemon)",
-                "boost",
+                "Pav bhaji",
+                "Addons ( chopped onions with lemon)",
+                "Boost",
                 "Boiled green gram",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
-                "Methi Roti",
+                "Methi roti",
                 "Dal fry",
-                "Drum Stick Sambar",
-                "Turai Chana",
-                "carrot peas poriyal",
-                "Mango/Avakay",
+                "Drum stick sambar",
+                "Turai chana",
+                "Carrot peas poriyal",
+                "Mango/avakay",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Elaichi Tea",
-                "Ginger Tea"
+                "Elaichi tea",
+                "Ginger tea"
             ],
             "Dinner": [
                 "Phulka",
-                "Gongura Dal",
+                "Gongura dal",
                 "Beetroot fry",
-                "mix-veg kadai",
-                "Pappu Charu",
-                "Veg Pulao",
+                "Mix-veg kadai",
+                "Pappu charu",
+                "Veg pulao",
                 "Payasam",
                 "Tomato",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         },
         "Friday": {
             "Breakfast": [
-                "poha (with sev)",
+                "Poha (with sev)",
                 "Addon (mint chutney)",
-                "Mysore Bajji",
-                "groundnut chutney",
-                "horlicks",
+                "Mysore bajji",
+                "Groundnut chutney",
+                "Horlicks",
                 "Sprouts",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
-                "Ghee Roti",
+                "Ghee roti",
                 "Palak dal",
-                "Radish Sambar",
-                "Corn Palak Masala",
-                "Cabbage Poriyal",
-                "Fruit Custard",
+                "Radish sambar",
+                "Corn palak masala",
+                "Cabbage poriyal",
+                "Fruit custard",
                 "Redchilly",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Masala Tea",
-                "Ginger Tea"
+                "Masala tea",
+                "Ginger tea"
             ],
             "Dinner": [
-                "Ghee Roti",
+                "Ghee roti",
                 "Tomato dal",
                 "Bitterguard fry",
-                "Tomato onion egg (gravy) (1)/ Paneer Butter Masala (paneer: 30gms)",
-                "Mango/Ginger Rasam",
-                "Gongura-Green Chilly",
+                "Tomato onion egg (gravy) (1)/ paneer butter masala (paneer: 30gms)",
+                "Mango/ginger rasam",
+                "Gongura-green chilly",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         },
         "Saturday": {
             "Breakfast": [
-                "Plain Dosa",
-                "Bombay Chutney (with onions) Peanut Chutney",
+                "Plain dosa",
+                "Bombay chutney (with onions) peanut chutney",
                 "Sambar",
-                "bournvita",
-                "Boiled Chana",
-                "Milk , Tea & Coffee",
-                "Bread, Jam & Amul Butter",
-                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (Corn flakes/Oats)",
-                "1 Egg/Banana"
+                "Bournvita",
+                "Boiled chana",
+                "Milk",
+                "Tea & coffee",
+                "Bread",
+                "Jam & amul butter",
+                "50 gms of (boiled chana/ peanuts/ sprouts) and 25gms of (corn Flakes/oats)",
+                "1 egg/banana"
             ],
             "Lunch": [
-                "Pudina Roti",
+                "Pudina roti",
                 "Moong dal",
-                "Mixed Veg Sambar",
-                "Dum Aloo Curry",
-                "Raw Banana Fry",
+                "Mixed veg sambar",
+                "Dum aloo curry",
+                "Raw banana fry",
                 "Lemon rice",
                 "Ginger",
                 "Rice",
-                "100ml Curd",
-                "Papad/Fryums",
-                "Fresh Chutney",
-                "Green Salad"
+                "100ml curd",
+                "Papad/fryums (2/3 types alternating)",
+                "Fresh chutney",
+                "Green salad (cucumber/beetroot+chilli+tomato+onion+lemon+carrot)"
             ],
             "Snacks": [
-                "Ginger Tea",
-                "Ginger Tea"
+                "Ginger tea",
+                "Ginger tea"
             ],
             "Dinner": [
-                "Totakura Dal",
-                "Veg Jalferzi",
-                "Chole Masala",
-                "Pepper Rasam",
+                "Totakura dal",
+                "Veg jalferzi",
+                "Chole masala",
+                "Pepper rasam",
                 "Bhatura",
-                "jalebi",
+                "Jalebi",
                 "Onion",
                 "Rice",
                 "Buttermilk",
-                "Papad/Fryums",
-                "Instant Pickle",
-                "Green Salad"
+                "Papad/fryums (2/3 types alternating)",
+                "Instant pickle",
+                "Green salad (cucumber/beetroor+chilli+tomato+onion+lemon+carrot)"
             ]
         }
     },
     "LDH Additional": {
         "Sunday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
             "Lunch": [
                 "Egg ka burji-25/-",
-                "Mushroom-Chilly (100 gms) - 65/-",
-                "Kadai Paneer -45/-",
-                "Chicken masala-45/-",
-                "Omelette"
+                "Mushroom-chilly (100 gms) - 65/-",
+                "Kadai paneer -45/-chicken masala-45/-",
+                "Omlette"
             ],
             "Snacks": [
                 "Samosa(100 gm) -10/-"
@@ -652,52 +681,51 @@
         },
         "Monday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
             "Lunch": [
                 "Egg gravy -25/-",
                 "Mushroom-65 (100 gms) - 65/-",
-                "B.P.M -45/-",
+                "B.p.m -45/-",
                 "Chicken kurma-45/-",
-                "omlette"
+                "Omlette"
             ],
             "Snacks": [
-                "Bread Pakoda",
+                "Bread pakoda",
                 "(1 piece of bread) -15/-"
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
-                "Butter Paneer masala -45/-",
-                "Butter Chicken gravy -45/-",
-                "Fish Gravy (150 gms  = 80 gm fish + 70 gm gravy) - 55/-"
+                "Butter paneer masala -45/-",
+                "Butter chicken gravy -45/-",
+                "Fish gravy (150 gms  = 80 gm fish + 70 gm gravy) - 55/-"
             ]
         },
         "Tuesday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
             "Lunch": [
                 "Egg ka burji-25/-",
                 "Paneer manchuriyan -55/-",
-                "Omelette",
-                "Chicken Manchurian -45/-"
+                "Omlettechicken manchurian -45/-"
             ],
             "Snacks": [
                 "Dal kachori (1 piece) - 15/-"
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
-                "Matar Paneer masala - 45/-",
-                "Butter chicken curry-45/- Mushroom-Chilly (100 gms) - 65/-"
+                "Matar paneer masala - 45/-",
+                "Butter chicken curry-45/- mushroom-chilly (100 gms) - 65/-"
             ]
         },
         "Wednesday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
@@ -705,64 +733,64 @@
                 "Egg ka burji-25/-",
                 "Mushroom masala (100 gms = 40 gm mushroom",
                 "60 gm gravy) - 50/-",
-                "Palak Paneer - 45/-",
-                "Chicken Hariyali - 45/-",
-                "omlette"
+                "Palak paneer - 45/-",
+                "Chicken hariyali - 45/-",
+                "Omlette"
             ],
             "Snacks": [
-                "Mirchi Bhajji (2 pieces) -10/-"
+                "Mirchi bhajji (2 pieces) -10/-"
             ],
             "Dinner": [
                 "Paneer briyani-85/-(100gms-panner, rice 400gms)",
-                "Chicken biryani-85/-(150gms chicken, rice 400gms)"
+                "Chicken biryani-85/-(150gms chicken,rice 400gms)"
             ]
         },
         "Thursday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
             "Lunch": [
                 "Egg gravy -25/-",
                 "Mushroom-65 (100 gms) - 65/-",
-                "paneer masala -45/-",
+                "Paneer masala -45/-",
                 "Chettinaadu ka chicken-45/-",
-                "omlette"
+                "Omlette"
             ],
             "Snacks": [
-                "Pav Bhaji  (2 pieces) - 25/-"
+                "Pav bhaji  (2 pieces) - 25/-"
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
-                "Paneer Manchurian-55/-",
-                "Chicken Kadai-45/-",
+                "Paneer manchurian-55/-",
+                "Chicken kadai-45/-",
                 "Fish fry (100 gms) - 60/-"
             ]
         },
         "Friday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
             "Lunch": [
                 "Egg  ka burji-25/-",
-                "Hariyali Paneer gravy -45/-",
+                "Hariyali paneer gravy -45/-",
                 "Masala chicken- 45/-",
-                "omlette"
+                "Omlette"
             ],
             "Snacks": [
-                "Bhel Puri (100 gms) - 20/-"
+                "Bhel puri (100 gms) - 20/-"
             ],
             "Dinner": [
-                "Chicken Fry-55/-",
-                "Mushroom-Chilly (100 gms) - 65/-"
+                "Chicken fry-55/-",
+                "Mushroom-chilly (100 gms) - 65/-"
             ]
         },
         "Saturday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
@@ -770,12 +798,12 @@
                 "Egg ka  burji-25/-",
                 "Mushroom masala (100 gms = 40 gm mushroom",
                 "60 gm gravy) - 50/-",
-                "paneer manchuriyan-55/-",
-                "Chilli Chicken dry-55/-",
-                "omlette"
+                "Paneer manchuriyan-55/-",
+                "Chilli chicken dry-55/-",
+                "Omlette"
             ],
             "Snacks": [
-                "Palak Pakodi (75 gms) - 15/-"
+                "Palak pakodi (75 gms) - 15/-"
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
@@ -787,15 +815,15 @@
     "UDH Additional": {
         "Sunday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
             "Lunch": [
                 "Egg ka burji-25/-",
-                "Mushroom-Chilly (100 gms) - 65/-",
-                "Kadai Paneer -45/-Chicken masala-45/-",
-                "omlette"
+                "Mushroom-chilly (100 gms) - 65/-",
+                "Kadai paneer -45/-chicken masala-45/-",
+                "Omlette"
             ],
             "Snacks": [
                 "Samosa(100 gm) -10/-"
@@ -806,51 +834,51 @@
         },
         "Monday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
             "Lunch": [
                 "Egg gravy -25/-",
                 "Mushroom-65 (100 gms) - 65/-",
-                "B.P.M -45/-",
+                "B.p.m -45/-",
                 "Chicken kurma-45/-",
-                "omlette"
+                "Omlette"
             ],
             "Snacks": [
-                "Bread Pakoda",
+                "Bread pakoda",
                 "(1 piece of bread) -15/-"
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
-                "Butter Paneer masala -45/-",
-                "Butter Chicken gravy -45/-",
-                "Fish Gravy (150 gms  = 80 gm fish + 70 gm gravy) - 55/-"
+                "Butter paneer masala -45/-",
+                "Butter chicken gravy -45/-",
+                "Fish gravy (150 gms  = 80 gm fish + 70 gm gravy) - 55/-"
             ]
         },
         "Tuesday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
             "Lunch": [
                 "Egg ka burji-25/-",
                 "Paneer manchuriyan -55/-",
-                "omlette\nChicken Manchurian -45/-"
+                "Omlettechicken manchurian -45/-"
             ],
             "Snacks": [
                 "Dal kachori (1 piece) - 15/-"
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
-                "Matar Paneer masala - 45/-",
-                "Butter chicken curry-45/- Mushroom-Chilly (100 gms) - 65/-"
+                "Matar paneer masala - 45/-",
+                "Butter chicken curry-45/- mushroom-chilly (100 gms) - 65/-"
             ]
         },
         "Wednesday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
@@ -858,65 +886,64 @@
                 "Egg ka burji-25/-",
                 "Mushroom masala (100 gms = 40 gm mushroom",
                 "60 gm gravy) - 50/-",
-                "Palak Paneer - 45/-",
-                "Chicken Hariyali - 45/-",
-                "omlette"
+                "Palak paneer - 45/-",
+                "Chicken hariyali - 45/-",
+                "Omlette"
             ],
             "Snacks": [
-                "Mirchi Bhajji (2 pieces) -10/-"
+                "Mirchi bhajji (2 pieces) -10/-"
             ],
             "Dinner": [
-                "Paneer briyani-85/-(100gms-panner",
-                "rice 400gms)\nChicken biryani-85/-(150gms chicken",
-                "rice 400gms)"
+                "Paneer briyani-85/-(100gms-panner, rice 400gms)",
+                "Chicken biryani-85/-(150gms chicken,rice 400gms)"
             ]
         },
         "Thursday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
             "Lunch": [
                 "Egg gravy -25/-",
                 "Mushroom-65 (100 gms) - 65/-",
-                "paneer masala -45/-",
+                "Paneer masala -45/-",
                 "Chettinaadu ka chicken-45/-",
-                "omlette"
+                "Omlette"
             ],
             "Snacks": [
-                "Pav Bhaji  (2 pieces) - 25/-"
+                "Pav bhaji  (2 pieces) - 25/-"
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
-                "Paneer Manchurian-55/-",
-                "Chicken Kadai-45/-",
+                "Paneer manchurian-55/-",
+                "Chicken kadai-45/-",
                 "Fish fry (100 gms) - 60/-"
             ]
         },
         "Friday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
             "Lunch": [
                 "Egg  ka burji-25/-",
-                "Hariyali Paneer gravy -45/-",
+                "Hariyali paneer gravy -45/-",
                 "Masala chicken- 45/-",
-                "omlette"
+                "Omlette"
             ],
             "Snacks": [
-                "Bhel Puri (100 gms) - 20/-"
+                "Bhel puri (100 gms) - 20/-"
             ],
             "Dinner": [
-                "Chicken Fry-55/-",
-                "Mushroom-Chilly (100 gms) - 65/-"
+                "Chicken fry-55/-",
+                "Mushroom-chilly (100 gms) - 65/-"
             ]
         },
         "Saturday": {
             "Breakfast": [
-                "Boiled Egg",
+                "Boiled egg",
                 "Bananas",
                 "Omelette"
             ],
@@ -924,12 +951,12 @@
                 "Egg ka  burji-25/-",
                 "Mushroom masala (100 gms = 40 gm mushroom",
                 "60 gm gravy) - 50/-",
-                "paneer manchuriyan-55/-",
-                "Chilli Chicken dry-55/-",
-                "omlette"
+                "Paneer manchuriyan-55/-",
+                "Chilli chicken dry-55/-",
+                "Omlette"
             ],
             "Snacks": [
-                "Palak Pakodi (75 gms) - 15/-"
+                "Palak pakodi (75 gms) - 15/-"
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
