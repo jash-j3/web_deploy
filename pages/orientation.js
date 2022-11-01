@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { useSession, signIn, signOut } from "next-auth/react";
+import { useRouter } from "next/router";
 
 import Layout from "../components/layout";
 import Container from "../components/container";
@@ -81,6 +82,12 @@ import clientPromise from "../lib/mongodb";
 //     </>
 //   );
 // }
+
+function SubmitGuesses()
+{
+  const router = useRouter();
+  router.push("/submit")
+}
 
 export default function Orientation({ guesses, hasGuessed, correctGuesses }) {
   const { data: session } = useSession();
