@@ -14,7 +14,7 @@ export default function SubmitGuesses() {
   let [guesses, setGuesses] = useState(Array(GUESS_COUNT).fill(""));
 
   const placeholders =
-    "what do you think we'll talk about in today's orientation".split(" ");
+    "what will we talk about today? one word answers only".split(" ");
 
   const { data: session } = useSession();
   console.log(session);
@@ -62,7 +62,11 @@ export default function SubmitGuesses() {
             {guesses.map((guess, i) => {
               return (
                 <>
-                  <div className="pt-5 dark:text-gray-50/80">Guess {i + 1}</div>
+                  {/*<div className="pt-5 dark:text-gray-50/80">*/}
+                  <div className="text-2xl dark:text-gray-50/80 font-mono font-bold tracking-tight md:tracking-tighter leading-tight mt-8">
+                    guess[{i}]
+                  </div>
+
                   <TextBox
                     placeholder={placeholders[i]}
                     value={guess}
@@ -79,7 +83,9 @@ export default function SubmitGuesses() {
           <div className="mb-5">
             <button
               type="button"
-              className="px-4 py-2 bg-neutral-900 dark:text-gray-50/80 rounded-3xl"
+              //className="px-4 py-2 bg-neutral-900 dark:text-gray-50/80 rounded-3xl"
+              className="px-8 py-2 text-white rounded-md ml-20 transition ease-in-out delay-150 bg-purple-500 hover:scale-110 hover:bg-purple-600 duration-300"
+
               onClick={() => uploadGuesses(guesses, session.user.email)}
             >
               Submit

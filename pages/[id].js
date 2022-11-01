@@ -26,7 +26,7 @@ export default function Guess({ guesses, correctGuesses, hasGuessed }) {
               : "bg-yellow-400";
           return (
             <>
-              <div className={`${color} m-3 rounded p-1 text-center`}>
+              <div className={`${color} m-3 rounded-3xl text-center p-2 tracking-tight md:tracking-tighter leading-tight`}>
                 {`${guess}`}
               </div>
             </>
