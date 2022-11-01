@@ -6,27 +6,9 @@ import Link from "next/link";
 import TextBox from "../components/textbox";
 import Layout from "../components/layout";
 import Container from "../components/container";
+import { useRouter } from "next/router";
 
 const GUESS_COUNT = 10;
-
-async function uploadGuesses(guesses) {
-    const endpoint = "/api/post";
-    let email = "cs20btech11001@iith.ac.in";
-    const data = {
-        _id: email,
-        guesses: guesses
-    }
-    const jsondata = JSON.stringify(data)
-    const options = {
-        method: "POST",
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: jsondata
-    }
-    const response = await fetch(endpoint, options)
-    // const result = await response.json()
-}
 
 export default function SubmitGuesses() {
   let [guesses, setGuesses] = useState(Array(GUESS_COUNT).fill(""));
@@ -36,57 +18,75 @@ export default function SubmitGuesses() {
 
   const { data: session } = useSession();
   console.log(session);
+  const router = useRouter();
+
+  async function uploadGuesses(guesses, email) {
+    if (guesses.indexOf("") > -1) {
+      alert("Please fill out all the guesses");
+      return;
+    }
+
+    const endpoint = "/api/post";
+    //   let email = "cs20btech11001@iith.ac.in";
+    const data = {
+      _id: email,
+      guesses: guesses,
+    };
+    const jsondata = JSON.stringify(data);
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: jsondata,
+    };
+    // const response = await fetch(endpoint, options);
+    const response = await fetch(endpoint, options)
+      .then((res) => {
+        console.log("res", res);
+        router.push("/orientation");
+      })
+      .catch((err) => {
+        console.log("err", err);
+      });
+  }
 
   return (
     <Layout>
-        <Head>
-            <title>&lt; Lambda /&gt; | Submit</title>
-        </Head>
-        <Container>
-            <>
-            <div className="mb-10">
-                {session ? (
-                guesses.map((guess, i) => {
-                    return (
-                    <>
-                        <div className="pt-5 dark:text-gray-50/80">Guess {i + 1}</div>
-                        <TextBox
-                        placeholder={placeholders[i]}
-                        value={guess}
-                        onChange={(e) => {
-                            const copiedArray = Array.from(guesses);
-                            copiedArray[i] = e.target.value;
-                            setGuesses(copiedArray);
-                        }}
-                        />
-                    </>
-                    );
-                })
-                ) : (
+      <Head>
+        <title>&lt; Lambda /&gt; | Submit</title>
+      </Head>
+      <Container>
+        <>
+          <div className="mb-10">
+            {guesses.map((guess, i) => {
+              return (
                 <>
-                    Not signed in <br />
-                    <button
-                    type="button"
-                    class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
-                    onClick={() => signIn()}
-                    >
-                    Sign in with Google
-                    </button>
+                  <div className="pt-5 dark:text-gray-50/80">Guess {i + 1}</div>
+                  <TextBox
+                    placeholder={placeholders[i]}
+                    value={guess}
+                    onChange={(e) => {
+                      const copiedArray = Array.from(guesses);
+                      copiedArray[i] = e.target.value;
+                      setGuesses(copiedArray);
+                    }}
+                  />
                 </>
-                )}
-                {}
-            </div>
-            <div className="mb-5">
-                <button
-                type="button"
-                className="px-4 py-2 bg-neutral-900 dark:text-gray-50/80 rounded-3xl"
-                onClick={() => uploadGuesses(guesses)}
-                >
-                Submit
-                </button>
-            </div>
-            </>
-        </Container>
+              );
+            })}
+          </div>
+          <div className="mb-5">
+            <button
+              type="button"
+              className="px-4 py-2 bg-neutral-900 dark:text-gray-50/80 rounded-3xl"
+              onClick={() => uploadGuesses(guesses, session.user.email)}
+            >
+              Submit
+            </button>
+          </div>
+        </>
+      </Container>
     </Layout>
   );
 }
