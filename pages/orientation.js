@@ -3,90 +3,90 @@ import Link from "next/link";
 
 import { useState } from "react";
 
+import { useSession, signIn, signOut } from "next-auth/react";
+
 import Layout from "../components/layout";
 import Container from "../components/container";
-import TextBox from "../components/textbox";
+import SubmitGuesses from "../components/SubmitGuesses";
+import ViewGuesses from "../components/ViewGuesses";
 
-const GUESS_COUNT = 10;
+import clientPromise from "../lib/mongodb";
 
-const placeholders =
-  "what do you think we'll talk about in today's orientation".split(" ");
+// function SubmitGuesses({ uploadGuesses }) {
+//   let [guesses, setGuesses] = useState(Array(GUESS_COUNT).fill(""));
 
-function SubmitGuesses({ uploadGuesses }) {
-  let [guesses, setGuesses] = useState(Array(GUESS_COUNT).fill(""));
+//   const { data: session } = useSession();
+//   console.log(session);
 
-  return (
-    <>
-      <div className="mb-10">
-        {guesses.map((guess, i) => {
-          return (
-            <>
-              <div className="pt-5 dark:text-gray-50/80">Guess {i + 1}</div>
-              <TextBox
-                placeholder={placeholders[i]}
-                value={guess}
-                onChange={(e) => {
-                  const copiedArray = Array.from(guesses);
-                  copiedArray[i] = e.target.value;
-                  setGuesses(copiedArray);
-                }}
-              />
-            </>
-          );
-        })}
-      </div>
-      <div className="mb-5">
-        <button
-          type="button"
-          className="px-4 py-2 bg-neutral-900 dark:text-gray-50/80 rounded-3xl"
-          onClick={() => uploadGuesses(guesses)}
-        >
-          Submit
-        </button>
-      </div>
-    </>
-  );
-}
+//   return (
+//     <>
+//       <div className="mb-10">
+//         {session ? (
+//           guesses.map((guess, i) => {
+//             return (
+//               <>
+//                 <div className="pt-5 dark:text-gray-50/80">Guess {i + 1}</div>
+//                 <TextBox
+//                   placeholder={placeholders[i]}
+//                   value={guess}
+//                   onChange={(e) => {
+//                     const copiedArray = Array.from(guesses);
+//                     copiedArray[i] = e.target.value;
+//                     setGuesses(copiedArray);
+//                   }}
+//                 />
+//               </>
+//             );
+//           })
+//         ) : (
+//           <>
+//             Not signed in <br />
+//             <button
+//               type="button"
+//               class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
+//               onClick={() => signIn()}
+//             >
+//               Sign in with Google
+//             </button>
+//           </>
+//         )}
+//         {}
+//       </div>
+//       <div className="mb-5">
+//         <button
+//           type="button"
+//           className="px-4 py-2 bg-neutral-900 dark:text-gray-50/80 rounded-3xl"
+//           onClick={() => uploadGuesses(guesses)}
+//         >
+//           Submit
+//         </button>
+//       </div>
+//     </>
+//   );
+// }
 
-function ViewGuesses({ guessStatus }) {
-  return (
-    <>
-      {guessStatus.map((guess, i) => {
-        let color = guess.correct ? "bg-green-700" : "bg-yellow-400";
-        return (
-          <>
-            <div className={`${color} m-3 rounded p-1 text-center`}>
-              {`${i + 1}. ${guess.guess}`}
-            </div>
-          </>
-        );
-      })}
-    </>
-  );
-}
+// function ViewGuesses({ guessStatus }) {
+//   return (
+//     <>
+//       {guessStatus.map((guess, i) => {
+//         let color = guess.correct ? "bg-green-700" : "bg-yellow-400";
+//         return (
+//           <>
+//             <div className={`${color} m-3 rounded p-1 text-center`}>
+//               {`${i + 1}. ${guess.guess}`}
+//             </div>
+//           </>
+//         );
+//       })}
+//     </>
+//   );
+// }
 
-export default function Orientation() {
-  // guessStatus is either an array of guesses, or null
-  //   if array, renders ViewGuesses
-  //   else (aka null) renders SubmitGuesses
-  let [guessStatus, setGuessStatus] = useState(
-    // test array
-    //Array(GUESS_COUNT)
-    //  .fill({ guess: "insert unknown guess here", correct: false })
-    //  .fill({ guess: "insert correct guess here", correct: true }, GUESS_COUNT / 2)
-    null
-  );
+export default function Orientation({ guesses, hasGuessed, correctGuesses }) {
+  const { data: session } = useSession();
 
-  // TODO: initialize guessStatus
-
-  // guesses is just an array of 10 strings
-  const uploadGuesses = (guesses) => {
-
-    // TODO: upload guesses to db
-
-    const guessStatus = guesses.map((guess) => ({ guess, correct: false }));
-    setGuessStatus(guessStatus);
-  };
+  console.log("guesses", guesses);
+  console.log("hasGuessed", hasGuessed);
 
   return (
     <Layout>
@@ -97,18 +97,63 @@ export default function Orientation() {
         <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-10 mt-8">
           <Link href="/">
             <a className="hover:underline text-purple-400 cursor-alias">
-              $ cd ~/Lambda/fun
+              $ cd ~
             </a>
           </Link>
         </h2>
-        {guessStatus ? (
-          <ViewGuesses guessStatus={guessStatus} />
+        {session ? (
+          hasGuessed ? (
+            <ViewGuesses guesses={guesses} correctGuesses={correctGuesses} />
+          ) : (
+            <SubmitGuesses />
+          )
         ) : (
-          <SubmitGuesses
-            uploadGuesses={uploadGuesses}
-          />
+          <>
+            Not signed in <br />
+            <button
+              type="button"
+              class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
+              onClick={() => signIn()}
+            >
+              Sign in with Google
+            </button>
+          </>
         )}
       </Container>
     </Layout>
   );
+}
+
+export async function getServerSideProps(req, res) {
+  try {
+    const client = await clientPromise;
+    const db = client.db("bingo");
+    const collection = db.collection("users");
+
+    const data = await collection.findOne({ _id: "cs20btech11001@iith.ac.in" });
+
+    console.log("fetched data", data);
+    const hasGuessed = data.guesses?.length > 0;
+    const guesses = hasGuessed ? data.guesses : [];
+
+    let correctGuesses = undefined;
+    if (hasGuessed) {
+      // User hasGuessed, fetch correct guesses
+      correctGuesses = await db
+        .collection("words")
+        .find({ _id: "0" })
+        .toArray();
+      console.log("correctGuesses", correctGuesses);
+    }
+
+    return {
+      props: {
+        guesses: JSON.parse(JSON.stringify(guesses)),
+        hasGuessed: hasGuessed,
+        correctGuesses: JSON.parse(JSON.stringify(correctGuesses)),
+      },
+    };
+  } catch (e) {
+    console.error(e);
+  }
 }
