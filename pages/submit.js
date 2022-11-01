@@ -58,7 +58,7 @@ export default function SubmitGuesses() {
       </Head>
       <Container>
         <>
-          <div className="mb-10">
+          <div className="mb-10 content-center">
             {guesses.map((guess, i) => {
               return (
                 <>
