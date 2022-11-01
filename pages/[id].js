@@ -21,7 +21,7 @@ export default function Guess({ guesses, correctGuesses, hasGuessed }) {
       <Container>
         {guesses.map((guess, i) => {
           const color =
-            correctGuesses[0]["Words"].indexOf(guess.toLowerCase()) > -1
+            correctGuesses[0]["Words"].indexOf(guess.toLowerCase().trim()) > -1
               ? "bg-green-700"
               : "bg-yellow-400";
           return (
