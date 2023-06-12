@@ -7,6 +7,7 @@ import { getAllPosts } from "../lib/api";
 
 export default function Index({ allPosts }) {
   const heroPost = allPosts[0];
+  // const morePosts = allPosts.slice(1); // add later instead of empty morePosts
 
   return (
     <>
