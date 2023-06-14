@@ -72,7 +72,7 @@
                 "Mutter do pyaza",
                 "Masala bhindi",
                 "Watermelon",
-                "Buttermilk",
+                "Butter milk",
                 "Mango/avakay",
                 "Rice",
                 "100ml curd",
@@ -87,9 +87,10 @@
             "Dinner": [
                 "Ragi roti",
                 "Channa dal fry",
-                "Cluster-beans",
-                "Avial",
+                "Cabbage pakoda",
+                "Lobia masala(black eyed peas)",
                 "Pachipulusu",
+                "Lassi",
                 "Tomato",
                 "Rice",
                 "Buttermilk",
@@ -116,7 +117,7 @@
             "Lunch": [
                 "Pudina roti",
                 "Dal tadka",
-                "Aravi sambar",
+                "Mor kulambu",
                 "Brinjal curry (guttivankaya)",
                 "Keerai kootu",
                 "Lemon juice",
@@ -149,8 +150,9 @@
         },
         "Wednesday": {
             "Breakfast": [
-                "Veg-noodles  + schezwan",
-                "Green-chilly & tomato sauce",
+                "Poori",
+                "White peas curry",
+                "Addon(onions)",
                 "Bournvita",
                 "Boiled peanuts",
                 "Milk",
@@ -164,10 +166,10 @@
                 "Ghee roti",
                 "Rajma",
                 "Tamilnadu sambar",
-                "Gobi masala",
+                "Gobi masala/jack fruit curry",
                 "Cabbage curry (dry)",
                 "Papaya",
-                "Tang (orange)",
+                "Mint/pudina sharbath",
                 "Gongura",
                 "Rice",
                 "100ml curd",
@@ -183,9 +185,9 @@
                 "Missi roti",
                 "Lasooni dal tadka",
                 "Aloo 65",
-                "Egg curry (1)/ matar-paneer (paneer: 30gms)",
+                "Egg curry (1)/ matar-paneer",
                 "Tomato rasam",
-                "Mint/pudina",
+                "Raw mango",
                 "Rice",
                 "Buttermilk",
                 "Papad/fryums (2/3 types alternating)",
@@ -229,7 +231,7 @@
             "Dinner": [
                 "Phulka",
                 "Gongura dal",
-                "Cabbage pakoda",
+                "Chana - onion (dry)",
                 "Tomato-drumstick",
                 "Pappu charu",
                 "Bisi bele bath",
@@ -280,7 +282,7 @@
                 "Ghee roti",
                 "Tomato dal",
                 "Bitterguard fry",
-                "Egg masala (1)/ baby-corn masala (babycorn: 50 gm)",
+                "Egg masala (1)/paneer masala",
                 "Mango/ginger rasam",
                 "Gongura-green chilly",
                 "Rice",
@@ -311,7 +313,7 @@
                 "Moong dal",
                 "Mixed veg sambar",
                 "Corn palak masala",
-                "Gobi 65",
+                "Aloo chokha",
                 "Tamarind rice",
                 "Tang (mango)",
                 "Ginger",
@@ -414,7 +416,7 @@
                 "Mutter do pyaza",
                 "Masala bhindi",
                 "Watermelon",
-                "Buttermilk",
+                "Butter milk",
                 "Mango/avakay",
                 "Rice",
                 "100ml curd",
@@ -429,9 +431,10 @@
             "Dinner": [
                 "Ragi roti",
                 "Channa dal fry",
-                "Cluster-beans",
-                "Avial",
+                "Cabbage pakoda",
+                "Lobia masala(black eyed peas)",
                 "Pachipulusu",
+                "Lassi",
                 "Tomato",
                 "Rice",
                 "Buttermilk",
@@ -458,7 +461,7 @@
             "Lunch": [
                 "Pudina roti",
                 "Dal tadka",
-                "Aravi sambar",
+                "Mor kulambu",
                 "Brinjal curry (guttivankaya)",
                 "Keerai kootu",
                 "Lemon juice",
@@ -491,8 +494,9 @@
         },
         "Wednesday": {
             "Breakfast": [
-                "Veg-noodles  + schezwan",
-                "Green-chilly & tomato sauce",
+                "Poori",
+                "White peas curry",
+                "Addon(onions)",
                 "Bournvita",
                 "Boiled peanuts",
                 "Milk",
@@ -506,10 +510,10 @@
                 "Ghee roti",
                 "Rajma",
                 "Tamilnadu sambar",
-                "Gobi masala",
+                "Gobi masala/jack fruit curry",
                 "Cabbage curry (dry)",
                 "Papaya",
-                "Tang (orange)",
+                "Mint/pudina sharbath",
                 "Gongura",
                 "Rice",
                 "100ml curd",
@@ -525,9 +529,9 @@
                 "Missi roti",
                 "Lasooni dal tadka",
                 "Aloo 65",
-                "Egg curry (1)/ matar-paneer (paneer: 30gms)",
+                "Egg curry (1)/ matar-paneer",
                 "Tomato rasam",
-                "Mint/pudina",
+                "Raw mango",
                 "Rice",
                 "Buttermilk",
                 "Papad/fryums (2/3 types alternating)",
@@ -571,7 +575,7 @@
             "Dinner": [
                 "Phulka",
                 "Gongura dal",
-                "Cabbage pakoda",
+                "Chana - onion (dry)",
                 "Tomato-drumstick",
                 "Pappu charu",
                 "Bisi bele bath",
@@ -622,7 +626,7 @@
                 "Ghee roti",
                 "Tomato dal",
                 "Bitterguard fry",
-                "Egg masala (1)/ baby-corn masala (babycorn: 50 gm)",
+                "Egg masala (1)/paneer masala",
                 "Mango/ginger rasam",
                 "Gongura-green chilly",
                 "Rice",
@@ -653,7 +657,7 @@
                 "Moong dal",
                 "Mixed veg sambar",
                 "Corn palak masala",
-                "Gobi 65",
+                "Aloo chokha",
                 "Tamarind rice",
                 "Tang (mango)",
                 "Ginger",
@@ -740,7 +744,8 @@
                 "Chicken manchuria- 55/-"
             ],
             "Snacks": [
-                "Dal kachori (1 piece) - 15/- and masala vada (2 pieces - 10/-)"
+                "Dal kachori (1 piece) - 15/- and masala vada (2 pieces - 10/-)",
+                "Egg bonda (15/-)"
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
@@ -763,7 +768,7 @@
                 "Omlette"
             ],
             "Snacks": [
-                "Samosa(100 gm)- 10/-"
+                "Veg momos(3 pieces 20/-)"
             ],
             "Dinner": [
                 "Paneer briyani-85/-(100gms-panner, rice 400gms)",
@@ -788,7 +793,7 @@
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
-                "Mushroom-65 (100 gms) - 55/-",
+                "Paneer burji (100 gms) - 55/-",
                 "Fish fry (100 gms) - 60/-",
                 "Omlette"
             ]
@@ -828,8 +833,7 @@
                 "Omlette"
             ],
             "Snacks": [
-                "Pav bhaji (25/-)",
-                "Gobi pakoda/chop (2 pieces - 15/-)"
+                "Samosa(100 gm)- 10/-"
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
@@ -897,7 +901,8 @@
                 "Chicken manchuria- 55/-"
             ],
             "Snacks": [
-                "Dal kachori (1 piece) - 15/- and masala vada (2 pieces - 10/-)"
+                "Dal kachori (1 piece) - 15/- and masala vada (2 pieces - 10/-)",
+                "Egg bonda (15/-)"
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
@@ -920,7 +925,7 @@
                 "Omlette"
             ],
             "Snacks": [
-                "Samosa(100 gm)- 10/-"
+                "Veg momos(3 pieces 20/-)"
             ],
             "Dinner": [
                 "Paneer briyani-85/-(100gms-panner, rice 400gms)",
@@ -945,7 +950,7 @@
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
-                "Mushroom-65 (100 gms) - 55/-",
+                "Paneer burji (100 gms) - 55/-",
                 "Fish fry (100 gms) - 60/-",
                 "Omlette"
             ]
@@ -985,8 +990,7 @@
                 "Omlette"
             ],
             "Snacks": [
-                "Pav bhaji (25/-)",
-                "Gobi pakoda/chop (2 pieces - 15/-)"
+                "Samosa(100 gm)- 10/-"
             ],
             "Dinner": [
                 "Egg ka burji-25/-",
