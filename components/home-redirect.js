@@ -1,11 +1,12 @@
 import Link from "next/link";
+import {useRouter} from 'next/router';
 
 export default function HomeRedirect() {
+
+  const router = useRouter();
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-10 mt-8">
-      <Link href="/">
-        <a className="hover:underline text-purple-400 cursor-alias">$ cd ~</a>
-      </Link>
-    </h2>
+    <p className="text-xl md:text-22xl tracking-tight md:tracking-tighter leading-tight mb-10 mt-8">
+        <code className="text-purple-400 cursor-alias">$ cd ~{router.pathname}</code>
+    </p>
   );
 }

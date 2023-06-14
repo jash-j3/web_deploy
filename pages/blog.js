@@ -16,9 +16,8 @@ export default function Blog({ allPosts }) {
           <title>&lt; Lambda /&gt; | Blog</title>
         </Head>
         <Container>
-          <HomeRedirect />
-          <h1 className="text-3xl sm:text-4xl md:text-6xl dark:text-gray-100 font-extrabold leading-9 sm:leading-10 md:leading-14 tracking-tight pb-2">
-            Blog
+          <h1 className="text-3xl sm:text-4xl md:text-6xl dark:text-gray-100 font-extrabold leading-9 sm:leading-10 md:leading-14 tracking-tight pb-2 mt-8 mb-8 xl:mt-12 xl:mb-12">
+            Lambda Blog
           </h1>
           <HorizontalRule />
           <Trio heroPost={heroPost} morePosts={morePosts} />

@@ -20,23 +20,23 @@ export default function Nav() {
           </div>
           <div className="flex flex-row">
             <ul className="flex flex-row font-medium text-gray-100 mt-2">
-              <li className="mx-6 hover:text-purple-200 ">
+              <li className="mx-6 hover:text-fuchsia-400 ">
                 <Link href="/" aria-label="" title="">
                   <a className="">About</a>
                 </Link>
               </li>
-              <li className="mx-6">
+              <li className="mx-6 hover:text-fuchsia-400 ">
                 <Link href="/blog" aria-label="" title="">
                   <a className="">Blog</a>
                 </Link>
               </li>
 
-              <li className="mx-6">
+              <li className="mx-6 hover:text-fuchsia-400 ">
                 <Link href="/projects" aria-label="" title="">
                   <a className="">Projects</a>
                 </Link>
               </li>
-              <li className="mx-6">
+              <li className="mx-6 hover:text-fuchsia-400 ">
                 <Link href="/team" aria-label="" title="">
                   <a className="">Team</a>
                 </Link>
