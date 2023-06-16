@@ -9,14 +9,18 @@ export default function Nav() {
       <div className="bg-slate-950 px-4 py-6">
         <div className="hidden sm:flex flex-row justify-between">
           <div className="logo flex flex-row ml-6">
-              <Link href="/" aria-label="" title="Homepage" className="inline">
-                <div className='text-gray-100 font-medium flex flex-row'>
-                  <a className="text-gray-100 font-medium">
-                    <img src={lambdaImage.src} style={{ height: "5vh" }} />
-                  </a>
-                  <h3 className="text-gray-100 text-2xl mt-1 ml-4">| &nbsp; Lambda</h3>
-                </div>
+            <div className="text-gray-100 font-medium flex flex-row">
+              <Link href="/" aria-label="Lambda logo" title="Homepage">
+                <a className="text-gray-100 font-medium">
+                  <img src={lambdaImage.src} style={{ height: "5vh" }} />
+                </a>
               </Link>
+              <Link href="/" aria-label="Lambda logo" title="Homepage">
+                <a className="text-gray-100 text-2xl mt-1 ml-4">
+                  | &nbsp; Lambda
+                </a>
+              </Link>
+            </div>
           </div>
           <div className="flex flex-row">
             <ul className="flex flex-row font-medium text-gray-100 mt-2">
