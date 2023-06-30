@@ -11,6 +11,7 @@ import HorizontalRule from "../components/HorizontalRule";
 // people[2] -> senior cores
 // people[3] -> cores
 
+/* Team 2022-23 (might be used later)
 // Harsha
 // DEVULAPALLI SAI PRACHODHAN
 // R V B R N AASEESH
@@ -167,8 +168,58 @@ const people = [
     },
   ],
 ];
+*/
 
-const rolename = ["Mentors", "Coordinators", "Senior Cores", "Cores"];
+const people = [
+  [
+    {
+      name: "Aayush Patel",
+      contact: "cs20btech@iith.ac.in",
+      githubUsername: "Aayush2492",
+    },
+    {
+      name: "Vikhyath K.",
+      contact: "cs20btech@iith.ac.in",
+      githubUsername: "Vikhyath-vec",
+    },
+  ],
+  [
+    {
+      name: "Kushagra Gupta",
+      contact: "cs21btech@iith.ac.in",
+      githubUsername: "MistyRavager",
+    },
+    {
+      name: "Kartheek Sriram Tammana",
+      contact: "cs21btech@iith.ac.in",
+      githubUsername: "kst164",
+    },
+    {
+      name: "Jaswanth Beere",
+      contact: "bm21btech@iith.ac.in",
+      githubUsername: "frostedCupcake",
+    },
+    {
+      name: "Varun Gupta",
+      contact: "cs21btech@iith.ac.in",
+      githubUsername: "procodervarun",
+    },
+  ],
+  [
+    {
+      name: "To be announced",
+      githubUsername: "",
+    },
+  ],
+  [
+    {
+      name: "To be announced",
+      githubUsername: "",
+    },
+  ],
+];
+
+const rolename = ["Mentors", "Heads", "Senior Cores", "Cores"];
 
 const cores = [];
 
