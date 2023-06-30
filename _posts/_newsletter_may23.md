@@ -1,5 +1,5 @@
 ---
-title: "Captures - May'22 Edition"
+title: "Captures - May'23 Edition"
 excerpt: "Lambda IITH is thrilled to present Captures - The Lambda Newsletter, specifically crafted for Dev Enthusiasts, containing insights into the most recent releases, updates, and advancements across the tech landscape. Read now to know about the current affairs that are shaping our industry."
 coverImage: "/static/images/blog/newsletter/1.webp"
 date: "2023-06-14T05:35:07.322Z"
