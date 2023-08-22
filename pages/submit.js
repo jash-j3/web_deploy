@@ -119,6 +119,21 @@ export default function SubmitGuesses() {
       return;
     }
 
+    
+      setAnswered(answered => {
+        
+        return [
+          ...answered.slice(0, questionIndex),
+          true,
+          ...answered.slice(questionIndex),
+        ]
+      })
+    
+      // var currentdate = new Date();
+      // var datetime =  
+      // + currentdate.getHours() + ":" 
+      // + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+
     const endpoint = "/api/post";
     const data = {
       // _id: session.user.email,
