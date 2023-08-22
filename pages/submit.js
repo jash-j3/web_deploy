@@ -121,7 +121,7 @@ export default function SubmitGuesses() {
 
     const endpoint = "/api/post";
     const data = {
-      _id: session.user.email,
+      // _id: session.user.email,
       questionIndex,
       answer,
       submissionTime: new Date().toISOString(),
