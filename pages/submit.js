@@ -95,14 +95,12 @@ import { data } from "autoprefixer";
 const getpoint = "/api/getans";
 const QUESTION_COUNT = 7;
 
-
 export default function SubmitGuesses() {
   const [questions, setQuestions] = useState(Array(QUESTION_COUNT).fill(""));
   const [answered, setAnswered] = useState(Array(QUESTION_COUNT).fill(false));
   const { data: session } = useSession();
   const router = useRouter();
-  
- 
+
   async function uploadAnswer(questionIndex, answer) {
     if (!session) {
       router.push("/orientation");
@@ -126,7 +124,7 @@ export default function SubmitGuesses() {
       });
 
       const endpoint = "/api/post";
-      
+
       const data = {
         email: session.user.email,
         name: session.user.name,
@@ -142,7 +140,6 @@ export default function SubmitGuesses() {
         body: JSON.stringify(data),
       };
 
-      
       // const ans=await fetch(getpoint,options1)
       try {
         const response = await fetch(endpoint, options);
@@ -167,14 +164,14 @@ export default function SubmitGuesses() {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({email:"cs22btech11028@iith.ac.in"}),
+    body: JSON.stringify({ email: "cs22btech11028@iith.ac.in" }),
   };
   async function getanswers() {
     try {
       const response = await fetch(getpoint, options1);
       if (response.ok) {
-        console.log(response)
-
+        let data = await response.json();
+        return data
       } else {
         console.error("Failed to get answer");
       }
