@@ -46,7 +46,7 @@ export async function getServerSideProps(context) {
     const db = client.db("bingo");
     const collection = db.collection("users");
 
-    const data = await collection.findOne({ _id: id });
+    const data = await collection.findOne({ email: id });
 
     console.log("fetched data", data);
     const hasGuessed = data?.guesses?.length > 0;

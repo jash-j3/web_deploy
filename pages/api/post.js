@@ -9,13 +9,16 @@ export default async function handler(req, res) {
   switch (req.method) {
     case "POST": {
       console.log("POST", req.body);
+      let myPost=await users.insertOne(req.body);
       //   let bodyObject = JSON.parse(req.body);
       //   let myPost = await users.insertOne(bodyObject);
-      let myPost = await users.insertOne(req.body);
+      // let myPost = await users.insertOne(req.body);
       console.log("myPost", myPost);
-      res.json(myPost.ops[0]);
+      res.json(myPost);
       break;
     }
-    case "GET":
+    case "GET": {
+      res.send("egrbliuhbguirgbilskdfubg")
+    }
   }
 }

@@ -83,76 +83,108 @@
 //   );
 // }
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import Head from "next/head";
-
 import TextBox from "../components/textbox";
 import Layout from "../components/layout";
 import Container from "../components/container";
 import { useRouter } from "next/router";
-
+import { get } from "animejs";
+import { data } from "autoprefixer";
+const getpoint = "/api/getans";
 const QUESTION_COUNT = 7;
+
 
 export default function SubmitGuesses() {
   const [questions, setQuestions] = useState(Array(QUESTION_COUNT).fill(""));
   const [answered, setAnswered] = useState(Array(QUESTION_COUNT).fill(false));
   const { data: session } = useSession();
   const router = useRouter();
-
+  
+ 
   async function uploadAnswer(questionIndex, answer) {
-    if (!answer) {
-      alert("Please fill out the answer");
-      return;
-    }
+    if (!session) {
+      router.push("/orientation");
+    } else {
+      if (!answer) {
+        alert("Please fill out the answer");
+        return;
+      }
 
-    if (answered[questionIndex]) {
-      alert("You've already submitted an answer for this question");
-      return;
-    }
+      if (answered[questionIndex]) {
+        alert("You've already submitted an answer for this question");
+        return;
+      }
 
-    
-      setAnswered(answered => {
-        
+      setAnswered((answered) => {
         return [
           ...answered.slice(0, questionIndex),
           true,
           ...answered.slice(questionIndex),
-        ]
-      })
-    
+        ];
+      });
 
+      const endpoint = "/api/post";
+      
+      const data = {
+        email: session.user.email,
+        name: session.user.name,
+        questionIndex,
+        answer,
+        submissionTime: new Date().toISOString(),
+      };
+      const options = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      };
 
-    const endpoint = "/api/post";
-    const data = {
-      email: session.user.email,
-      name: session.user.name,
-      questionIndex,
-      answer,
-      submissionTime: new Date().toISOString(),
-    };
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    };
-
-    try {
-      const response = await fetch(endpoint, options);
-      if (response.ok) {
-        const updatedAnswered = [...answered];
-        updatedAnswered[questionIndex] = true;
-        setAnswered(updatedAnswered);
-        router.push("/orientation");
-      } else {
-        console.error("Failed to submit answer");
+      
+      // const ans=await fetch(getpoint,options1)
+      try {
+        const response = await fetch(endpoint, options);
+        if (response.ok) {
+          const updatedAnswered = [...answered];
+          updatedAnswered[questionIndex] = true;
+          setAnswered(updatedAnswered);
+        } else {
+          console.error("Failed to submit answer");
+        }
+      } catch (error) {
+        console.error("Error submitting answer:", error);
       }
-    } catch (error) {
-      console.error("Error submitting answer:", error);
     }
   }
+
+  // const data1 = {
+  // //   email: session.user.email,
+  // // };
+  const options1 = {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({email:"cs22btech11028@iith.ac.in"}),
+  };
+  async function getanswers() {
+    try {
+      const response = await fetch(getpoint, options1);
+      if (response.ok) {
+        console.log("revfb")
+      } else {
+        console.error("Failed to get answer");
+      }
+    } catch (error) {
+      console.log("jg");
+    }
+  }
+
+  useEffect(()=>{
+    getanswers()
+  })
 
   return (
     <Layout>
@@ -189,7 +221,7 @@ export default function SubmitGuesses() {
                     </>
                   ) : (
                     <div className="text-green-500 mt-2">
-                      Answer submitted on {answered[i]}
+                      Answer submitted on {new Date().toLocaleTimeString()}
                     </div>
                   )}
                 </div>
