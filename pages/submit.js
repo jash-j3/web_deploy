@@ -163,7 +163,7 @@ export default function SubmitGuesses() {
   // //   email: session.user.email,
   // // };
   const options1 = {
-    method: "GET",
+    method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
@@ -173,19 +173,24 @@ export default function SubmitGuesses() {
     try {
       const response = await fetch(getpoint, options1);
       if (response.ok) {
-        console.log("revfb")
+        console.log(response)
+
       } else {
         console.error("Failed to get answer");
       }
     } catch (error) {
-      console.log("jg");
+      console.log("jg", error);
     }
   }
 
-  useEffect(()=>{
-    getanswers()
-  })
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await getanswers();
+      console.log(response);
+    };
 
+    fetchData();
+  });
   return (
     <Layout>
       <Head>
