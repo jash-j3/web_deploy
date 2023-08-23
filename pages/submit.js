@@ -2,30 +2,23 @@
 // import { useSession } from "next-auth/react";
 // import Head from "next/head";
 // import Link from "next/link";
-
 // import TextBox from "../components/textbox";
 // import Layout from "../components/layout";
 // import Container from "../components/container";
 // import { useRouter } from "next/router";
-
 // const GUESS_COUNT = 10;
-
 // export default function SubmitGuesses() {
 //   let [guesses, setGuesses] = useState(Array(GUESS_COUNT).fill(""));
-
 //   const placeholders =
 //     "what do you think we'll talk about in today's orientation".split(" ");
-
 //   const { data: session } = useSession();
 //   console.log(session);
 //   const router = useRouter();
-
 //   async function uploadGuesses(guesses, email) {
 //     if (guesses.indexOf("") > -1) {
 //       alert("Please fill out all the guesses");
 //       return;
 //     }
-
 //     const endpoint = "/api/post";
 //     //   let email = "cs20btech11001@iith.ac.in";
 //     const data = {
@@ -50,7 +43,6 @@
 //         console.log("err", err);
 //       });
 //   }
-
 //   return (
 //     <Layout>
 //       <Head>
@@ -90,10 +82,10 @@
 //     </Layout>
 //   );
 // }
-import { useState, useEffect } from "react";
+
+import { useState } from "react";
 import { useSession } from "next-auth/react";
 import Head from "next/head";
-import Link from "next/link";
 
 import TextBox from "../components/textbox";
 import Layout from "../components/layout";
@@ -129,14 +121,12 @@ export default function SubmitGuesses() {
         ]
       })
     
-      // var currentdate = new Date();
-      // var datetime =  
-      // + currentdate.getHours() + ":" 
-      // + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+
 
     const endpoint = "/api/post";
     const data = {
-      // _id: session.user.email,
+      email: session.user.email,
+      name: session.user.name,
       questionIndex,
       answer,
       submissionTime: new Date().toISOString(),
