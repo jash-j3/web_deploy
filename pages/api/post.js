@@ -14,7 +14,7 @@ export default async function handler(req, res) {
       //   let myPost = await users.insertOne(bodyObject);
       // let myPost = await users.insertOne(req.body);
       console.log("myPost", myPost);
-      res.json(myPost);
+      // res.json(myPost);
       break;
     }
     case "GET": {

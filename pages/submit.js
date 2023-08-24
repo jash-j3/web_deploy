@@ -90,8 +90,6 @@ import TextBox from "../components/textbox";
 import Layout from "../components/layout";
 import Container from "../components/container";
 import { useRouter } from "next/router";
-import { get } from "animejs";
-import { data } from "autoprefixer";
 const getpoint = "/api/getans";
 const QUESTION_COUNT = 7;
 
@@ -101,6 +99,38 @@ export default function SubmitGuesses() {
   const { data: session } = useSession();
   const router = useRouter();
 
+  const options1 = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email: "cs22btech11028@iith.ac.in" }),
+  };
+  async function getanswers() {
+    try {
+      const response = await fetch(getpoint, options1);
+      if (response.ok) {
+        let data = await response.json();
+        return data;
+      } else {
+        console.error("Failed to get answer");
+      }
+    } catch (error) {
+      console.log("jg", error);
+    }
+  }
+
+  const fetchData = async () => {
+    const response = await getanswers();
+    let answ;
+    for (answ in response) {
+      console.log(response)
+      console.log(response[answ].questionIndex);
+      answered[response[answ].questionIndex] = true;
+    }
+  };
+
+  fetchData();
   async function uploadAnswer(questionIndex, answer) {
     if (!session) {
       router.push("/orientation");
@@ -156,38 +186,6 @@ export default function SubmitGuesses() {
     }
   }
 
-  // const data1 = {
-  // //   email: session.user.email,
-  // // };
-  const options1 = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ email: "cs22btech11028@iith.ac.in" }),
-  };
-  async function getanswers() {
-    try {
-      const response = await fetch(getpoint, options1);
-      if (response.ok) {
-        let data = await response.json();
-        return data
-      } else {
-        console.error("Failed to get answer");
-      }
-    } catch (error) {
-      console.log("jg", error);
-    }
-  }
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await getanswers();
-      console.log(response);
-    };
-
-    fetchData();
-  });
   return (
     <Layout>
       <Head>
@@ -197,6 +195,7 @@ export default function SubmitGuesses() {
         <>
           <div className="mb-10 content-center">
             {questions.map((question, i) => {
+              fetchData();
               return (
                 <div key={i} className="mb-5">
                   <div className="pt-5 dark:text-gray-50/80">
@@ -223,7 +222,7 @@ export default function SubmitGuesses() {
                     </>
                   ) : (
                     <div className="text-green-500 mt-2">
-                      Answer submitted on {new Date().toLocaleTimeString()}
+                      Answer submitted successfully!
                     </div>
                   )}
                 </div>
