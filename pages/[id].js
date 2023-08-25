@@ -84,4 +84,7 @@ export async function getServerSideProps(context) {
   } catch (e) {
     console.error(e);
   }
+  return {
+    props: {},
+  }
 }

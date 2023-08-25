@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useSession } from "next-auth/react";
+import { useSession, signIn } from "next-auth/react";
 import Head from "next/head";
 import TextBox from "../components/textbox";
 import Layout from "../components/layout";
@@ -7,6 +7,13 @@ import Container from "../components/container";
 import { useRouter } from "next/router";
 const getpoint = "/api/getans";
 const QUESTION_COUNT = 7;
+
+/* 
+TODO:
+  show answers
+  check why slow fetch
+
+*/
 
 export default function SubmitGuesses() {
   const [questions, setQuestions] = useState(Array(QUESTION_COUNT).fill(""));
@@ -23,7 +30,7 @@ export default function SubmitGuesses() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email: "cs22btech11028@iith.ac.in" }),
+      body: JSON.stringify({ email: session?.user.email }),
     };
     try {
       const response = await fetch(getpoint, options1);
@@ -37,12 +44,27 @@ export default function SubmitGuesses() {
       console.log("jg", error);
     }
   }
-  function MyComponent() {
+  // function MyComponent() {
+  //   useEffect(() => {
+  //     getanswers();
+  //   }, []);}
+    
     useEffect(() => {
-      getanswers();
-    }, []);}
-
-  
+      if (session && router.isReady) {
+        getanswers();
+      }
+    }, [router, session]);
+    
+    useEffect(() => {
+      const a = Array(QUESTION_COUNT).fill(false);
+      for (let answ = 0; answ<data1.length;answ++) {
+        console.log(data1[answ].questionIndex);
+        a[data1[answ].questionIndex] = true;
+      }
+      setAnswered(a);
+      console.log(questions);
+      
+    }, [data1]);
   // const fetchData = async () => {
   //   const response = await getanswers();
   //   let answ;
@@ -53,17 +75,17 @@ export default function SubmitGuesses() {
   //   }
   // };
 
-  function workData(response){
-    MyComponent()
-    let answ;
-    for (answ in response) {
-      console.log(response)
-      console.log(response[answ].questionIndex);
-      answered[response[answ].questionIndex] = true;
-    }
+  // function workData(response){
+  //   MyComponent()
+  //   let answ;
+  //   for (answ in response) {
+  //     console.log(response)
+  //     console.log(response[answ].questionIndex);
+  //     answered[response[answ].questionIndex] = true;
+  //   }
     
-  }
-  workData(data1);
+  // }
+  // workData(data1);
 
   
   async function uploadAnswer(questionIndex, answer) {
@@ -84,7 +106,7 @@ export default function SubmitGuesses() {
         return [
           ...answered.slice(0, questionIndex),
           true,
-          ...answered.slice(questionIndex),
+          ...answered.slice(questionIndex+1),
         ];
       });
 

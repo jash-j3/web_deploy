@@ -12,7 +12,8 @@ export default async function handler(req, res) {
     
     case "POST": {
       await users.find({"email":req.body.email}).toArray(function(err, results){
-        res.send(results)
+        res.send(JSON.stringify(results))
+        res.end();
     });
       
     }
