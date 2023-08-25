@@ -15,7 +15,6 @@ export default function SubmitGuesses() {
   const { data: session } = useSession();
   const router = useRouter();
 
-
   async function getanswers() {
     const options1 = {
       method: "POST",
@@ -41,117 +40,118 @@ export default function SubmitGuesses() {
         getanswers();
       }
     }, [router, session]);
-    
+
     useEffect(() => {
       const a = Array(QUESTION_COUNT).fill(false);
-      for (let answ = 0; answ<data1.length;answ++) {
+      for (let answ = 0; answ < data1.length; answ++) {
         console.log(data1[answ].questionIndex);
         a[data1[answ].questionIndex] = true;
       }
       setAnswered(a);
       console.log(questions);
-      
     }, [data1]);
-  
-  async function uploadAnswer(questionIndex, answer) {
-    if (!session) {
-      router.push("/orientation");
-    } else {
-      if (!answer) {
-        alert("Please fill out the answer");
-        return;
-      }
 
-      if (answered[questionIndex]) {
-        alert("You've already submitted an answer for this question");
-        return;
-      }
-
-      setAnswered((answered) => {
-        return [
-          ...answered.slice(0, questionIndex),
-          true,
-          ...answered.slice(questionIndex+1),
-        ];
-      });
-
-      const endpoint = "/api/post";
-
-      const data = {
-        email: session.user.email,
-        name: session.user.name,
-        questionIndex,
-        answer,
-        submissionTime: new Date().toISOString(),
-      };
-      const options = {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      };
-
-      try {
-        const response = await fetch(endpoint, options);
-        if (response.ok) {
-          const updatedAnswered = [...answered];
-          updatedAnswered[questionIndex] = true;
-          setAnswered(updatedAnswered);
-        } else {
-          console.error("Failed to submit answer");
+    async function uploadAnswer(questionIndex, answer) {
+      if (!session) {
+        router.push("/orientation");
+      } else {
+        if (!answer) {
+          alert("Please fill out the answer");
+          return;
         }
-      } catch (error) {
-        console.error("Error submitting answer:", error);
+
+        if (answered[questionIndex]) {
+          alert("You've already submitted an answer for this question");
+          return;
+        }
+
+        setAnswered((answered) => {
+          return [
+            ...answered.slice(0, questionIndex),
+            true,
+            ...answered.slice(questionIndex + 1),
+          ];
+        });
+
+        const endpoint = "/api/post";
+
+        const data = {
+          email: session.user.email,
+          name: session.user.name,
+          questionIndex,
+          answer,
+          submissionTime: new Date().toISOString(),
+        };
+        const options = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        };
+
+        try {
+          const response = await fetch(endpoint, options);
+          if (response.ok) {
+            const updatedAnswered = [...answered];
+            updatedAnswered[questionIndex] = true;
+            setAnswered(updatedAnswered);
+          } else {
+            console.error("Failed to submit answer");
+          }
+        } catch (error) {
+          console.error("Error submitting answer:", error);
+        }
       }
     }
-  }
 
-  return (
-    <Layout>
-      <Head>
-        <title>&lt; Lambda /&gt; | Submit</title>
-      </Head>
-      <Container>
-        <>
-          <div className="mb-10 content-center">
-            
-            {questions.map((question, i) => {
-              return (
-                <div key={i} className="mb-5">
-                  <div className="pt-5 dark:text-gray-50/80">
-                    Question {i + 1}
-                  </div>
-                  {!answered[i] ? (
-                    <>
-                      <TextBox
-                        placeholder={`Enter your answer for question ${i + 1}`}
-                        value={question}
-                        onChange={(e) => {
-                          const updatedQuestions = [...questions];
-                          updatedQuestions[i] = e.target.value;
-                          setQuestions(updatedQuestions);
-                        }}
-                      />
-                      <button
-                        type="button"
-                        className="px-4 py-2 bg-neutral-900 dark:text-gray-50/80 rounded-3xl mt-2"
-                        onClick={() => uploadAnswer(i, questions[i])}
-                      >
-                        Submit Answer
-                      </button>
-                    </>
-                  ) : (
-                    <div className="text-green-500 mt-2">
-                      Answer submitted successfully!
+    return (
+      <Layout>
+        <Head>
+          <title>&lt; Lambda /&gt; | Submit</title>
+        </Head>
+        <Container>
+          <>
+            <div className="mb-10 content-center">
+              {questions.map((question, i) => {
+                return (
+                  <div key={i} className="mb-5">
+                    <div className="pt-5 dark:text-gray-50/80">
+                      Question {i + 1}
                     </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </>
-      </Container>
-    </Layout>
-  );
+                    {!answered[i] ? (
+                      <>
+                        <TextBox
+                          placeholder={`Enter your answer for question ${
+                            i + 1
+                          }`}
+                          value={question}
+                          onChange={(e) => {
+                            const updatedQuestions = [...questions];
+                            updatedQuestions[i] = e.target.value;
+                            setQuestions(updatedQuestions);
+                          }}
+                        />
+                        <button
+                          type="button"
+                          className="px-4 py-2 bg-neutral-900 dark:text-gray-50/80 rounded-3xl mt-2"
+                          onClick={() => uploadAnswer(i, questions[i])}
+                        >
+                          Submit Answer
+                        </button>
+                      </>
+                    ) : (
+                      <div className="text-green-500 mt-2">
+                        Answer submitted successfully!
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </>
+        </Container>
+      </Layout>
+    );
+  }
 }
