@@ -8,19 +8,11 @@ import { useRouter } from "next/router";
 const getpoint = "/api/getans";
 const QUESTION_COUNT = 7;
 
-/* 
-TODO:
-  show answers
-  check why slow fetch
-
-*/
-
 export default function SubmitGuesses() {
   const [questions, setQuestions] = useState(Array(QUESTION_COUNT).fill(""));
   const [answered, setAnswered] = useState(Array(QUESTION_COUNT).fill(false));
   const [data1, setData1] = useState([]);
   const { data: session } = useSession();
-  const [email, setEmail] = useState("");
   const router = useRouter();
 
 
@@ -43,12 +35,7 @@ export default function SubmitGuesses() {
     } catch (error) {
       console.log("jg", error);
     }
-  }
-  // function MyComponent() {
-  //   useEffect(() => {
-  //     getanswers();
-  //   }, []);}
-    
+
     useEffect(() => {
       if (session && router.isReady) {
         getanswers();
@@ -65,28 +52,6 @@ export default function SubmitGuesses() {
       console.log(questions);
       
     }, [data1]);
-  // const fetchData = async () => {
-  //   const response = await getanswers();
-  //   let answ;
-  //   for (answ in response) {
-  //     console.log(response)
-  //     console.log(response[answ].questionIndex);
-  //     answered[response[answ].questionIndex] = true;
-  //   }
-  // };
-
-  // function workData(response){
-  //   MyComponent()
-  //   let answ;
-  //   for (answ in response) {
-  //     console.log(response)
-  //     console.log(response[answ].questionIndex);
-  //     answered[response[answ].questionIndex] = true;
-  //   }
-    
-  // }
-  // workData(data1);
-
   
   async function uploadAnswer(questionIndex, answer) {
     if (!session) {
@@ -127,7 +92,6 @@ export default function SubmitGuesses() {
         body: JSON.stringify(data),
       };
 
-      // const ans=await fetch(getpoint,options1)
       try {
         const response = await fetch(endpoint, options);
         if (response.ok) {
