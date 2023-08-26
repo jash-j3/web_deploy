@@ -33,7 +33,7 @@ export default function SubmitGuesses() {
       }
     } catch (error) {
       console.log("jg", error);
-    }
+    }}
 
     useEffect(() => {
       if (session && router.isReady) {
@@ -154,4 +154,4 @@ export default function SubmitGuesses() {
       </Layout>
     );
   }
-}
+

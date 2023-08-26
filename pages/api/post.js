@@ -17,8 +17,5 @@ export default async function handler(req, res) {
       // res.json(myPost);
       break;
     }
-    case "GET": {
-      res.send("egrbliuhbguirgbilskdfubg")
-    }
   }
 }
