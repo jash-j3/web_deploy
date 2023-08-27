@@ -207,19 +207,113 @@ const people = [
   ],
   [
     {
-      name: "To be announced",
-      githubUsername: "",
+      name: "Bhaskar Mandal",
+      githubUsername: "bhaskaraa45",
     },
-  ],
-  [
     {
-      name: "To be announced",
-      githubUsername: "",
+      name: "Himanhsu",
+      githubUsername: "himanshu-ui-max ",
+    },
+    {
+      name: "Priyanshu Goyal",
+      githubUsername: "Priyanshu327Goyal",
+    },
+    {
+      name: "Bonthu Mani Hemanth Reddy",
+      githubUsername: "hemanthreddy6",
+    },
+    {
+      name: "Suraj Kumar ",
+      githubUsername: "kumarsuraj151",
+    },
+    {
+      name: "Saksham",
+      githubUsername: "saksham-ai26",
+    },
+    {
+      name: "Darpan Gaur",
+      githubUsername: "darpan-gaur",
+    },
+    {
+      name: "Lokesh",
+      githubUsername: "LokeshBadisa",
+    },
+    {
+      name: "Armaan",
+      githubUsername: "Jitik12",
+    },
+    {
+      name: "Arin Parag Kulkarni ",
+      githubUsername: "akoolarni",
+    },
+    {
+      name: "Prakhar Saxena",
+      githubUsername: "prakhar-codes",
+    },
+    {
+      name: "G.SAI KEERTHI",
+      githubUsername: "Gsaikeerthi",
+    },
+    {
+      name: "RISHITHA SURINENI",
+      githubUsername: "Rishitha745",
+    },
+    {
+      name: "Dikshant Khandelwal",
+      githubUsername: "DikshantK2004",
+    },
+    {
+      name: "K S Ananth",
+      githubUsername: "ksananth4424",
+    },
+    {
+      name: "Nimai Parsa",
+      githubUsername: "nimaiParsa",
+    },
+    {
+      name: "Kaipa Venkata Tuhil",
+      githubUsername: "Tuhil926",
+    },
+    {
+      name: "Monish Asawa",
+      githubUsername: "Monish-Asawa",
+    },
+    {
+      name: "Siddhant Shahapurkar",
+      githubUsername: "siddhantshahapurkar",
+    },
+    {
+      name: "SIDDHARTHA KOMMU",
+      githubUsername: "SIDDHARHTA182004",
+    },
+    {
+      name: "Ajay Krishnan K",
+      githubUsername: "ajaykrshna",
+    },
+    {
+      name: "Adhtith T",
+      githubUsername: "adhitht",
+    },
+    {
+      name: "Gitanshu Arora",
+      githubUsername: "GitanshuA",
+    },
+    {
+      name: "Advait Jain",
+      githubUsername: "adv8j",
+    },
+    {
+      name: "Gunnam Sri Satya Koushik",
+      githubUsername: "koushikgunnam",
+    },
+    {
+      name: "Jash Jhatakia",
+      githubUsername: "jash-j3",
     },
   ],
 ];
 
-const rolename = ["Mentors", "Heads", "Senior Cores", "Cores"];
+const rolename = ["Mentors", "Heads", "Cores"];
 
 const cores = [];
 
