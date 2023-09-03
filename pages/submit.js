@@ -1,54 +1,109 @@
-import { useState } from "react";
-import { useSession } from "next-auth/react";
+import { useEffect, useState } from "react";
+import { useSession, signIn } from "next-auth/react";
 import Head from "next/head";
-import Link from "next/link";
-
 import TextBox from "../components/textbox";
 import Layout from "../components/layout";
 import Container from "../components/container";
 import { useRouter } from "next/router";
-
-const GUESS_COUNT = 10;
+const getpoint = "/api/getans";
+const QUESTION_COUNT = 7;
 
 export default function SubmitGuesses() {
-  let [guesses, setGuesses] = useState(Array(GUESS_COUNT).fill(""));
-
-  const placeholders =
-    "what will we talk about today? one word answers only".split(" ");
-
+  const [questions, setQuestions] = useState(Array(QUESTION_COUNT).fill(""));
+  const [answered, setAnswered] = useState(Array(QUESTION_COUNT).fill(false));
+  const [data1, setData1] = useState([]);
   const { data: session } = useSession();
-  console.log(session);
   const router = useRouter();
 
-  async function uploadGuesses(guesses, email) {
-    if (guesses.indexOf("") > -1) {
-      alert("Please fill out all the guesses");
-      return;
-    }
-
-    const endpoint = "/api/post";
-    //   let email = "cs20btech11001@iith.ac.in";
-    const data = {
-      _id: email,
-      guesses: guesses,
-    };
-    const jsondata = JSON.stringify(data);
-    const options = {
+  async function getanswers() {
+    const options1 = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: jsondata,
+      body: JSON.stringify({ email: session?.user.email }),
     };
-    // const response = await fetch(endpoint, options);
-    const response = await fetch(endpoint, options)
-      .then((res) => {
-        console.log("res", res);
-        router.push("/orientation");
-      })
-      .catch((err) => {
-        console.log("err", err);
+    try {
+      const response = await fetch(getpoint, options1);
+      if (response.ok) {
+        let data1 = await response.json();
+        setData1(data1);
+      } else {
+        console.error("Failed to get answer");
+      }
+    } catch (error) {
+      console.log("jg", error);
+    }
+  }
+
+  useEffect(() => {
+    if (session && router.isReady) {
+      getanswers();
+    }
+  }, [router, session]);
+
+  useEffect(() => {
+    const a = Array(QUESTION_COUNT).fill(false);
+    for (let answ = 0; answ < data1.length; answ++) {
+      console.log(data1[answ].questionIndex);
+      a[data1[answ].questionIndex] = true;
+    }
+    setAnswered(a);
+    console.log(questions);
+  }, [data1]);
+
+  async function uploadAnswer(questionIndex, answer) {
+    if (!session) {
+      router.push("/orientation");
+    } else {
+      if (!answer) {
+        alert("Please fill out the answer");
+        return;
+      }
+
+      if (answered[questionIndex]) {
+        alert("You've already submitted an answer for this question");
+        return;
+      }
+
+      setAnswered((answered) => {
+        return [
+          ...answered.slice(0, questionIndex),
+          true,
+          ...answered.slice(questionIndex + 1),
+        ];
       });
+
+      const endpoint = "/api/post";
+
+      const data = {
+        email: session.user.email,
+        name: session.user.name,
+        questionIndex,
+        answer,
+        submissionTime: new Date().toISOString(),
+      };
+      const options = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      };
+
+      try {
+        const response = await fetch(endpoint, options);
+        if (response.ok) {
+          const updatedAnswered = [...answered];
+          updatedAnswered[questionIndex] = true;
+          setAnswered(updatedAnswered);
+        } else {
+          console.error("Failed to submit answer");
+        }
+      } catch (error) {
+        console.error("Error submitting answer:", error);
+      }
+    }
   }
 
   return (
@@ -59,37 +114,39 @@ export default function SubmitGuesses() {
       <Container>
         <>
           <div className="mb-10 content-center">
-            {guesses.map((guess, i) => {
+            {questions.map((question, i) => {
               return (
-                <>
-                  {/*<div className="pt-5 dark:text-gray-50/80">*/}
-                  <div className="text-2xl dark:text-gray-50/80 font-mono font-bold tracking-tight md:tracking-tighter leading-tight mt-8">
-                    guess[{i}]
+                <div key={i} className="mb-5">
+                  <div className="pt-5 dark:text-gray-50/80">
+                    Question {i + 1}
                   </div>
-
-                  <TextBox
-                    placeholder={placeholders[i]}
-                    value={guess}
-                    onChange={(e) => {
-                      const copiedArray = Array.from(guesses);
-                      copiedArray[i] = e.target.value;
-                      setGuesses(copiedArray);
-                    }}
-                  />
-                </>
+                  {!answered[i] ? (
+                    <>
+                      <TextBox
+                        placeholder={`Enter your answer for question ${i + 1}`}
+                        value={question}
+                        onChange={(e) => {
+                          const updatedQuestions = [...questions];
+                          updatedQuestions[i] = e.target.value;
+                          setQuestions(updatedQuestions);
+                        }}
+                      />
+                      <button
+                        type="button"
+                        className="px-4 py-2 bg-neutral-900 dark:text-gray-50/80 rounded-3xl mt-2"
+                        onClick={() => uploadAnswer(i, questions[i])}
+                      >
+                        Submit Answer
+                      </button>
+                    </>
+                  ) : (
+                    <div className="text-green-500 mt-2">
+                      Answer submitted successfully!
+                    </div>
+                  )}
+                </div>
               );
             })}
-          </div>
-          <div className="mb-5">
-            <button
-              type="button"
-              //className="px-4 py-2 bg-neutral-900 dark:text-gray-50/80 rounded-3xl"
-              className="px-8 py-2 text-white rounded-md ml-20 transition ease-in-out delay-150 bg-purple-500 hover:scale-110 hover:bg-purple-600 duration-300"
-
-              onClick={() => uploadGuesses(guesses, session.user.email)}
-            >
-              Submit
-            </button>
           </div>
         </>
       </Container>

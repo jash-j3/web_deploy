@@ -17,7 +17,7 @@ export default function Orientation() {
       alert("Please sign in with your IITH email");
       signOut();
     }
-    router.push(`/${session.user.email}`);
+    router.push(`/submit`);
   }
 
   return (

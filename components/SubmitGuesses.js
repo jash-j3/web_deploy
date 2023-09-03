@@ -5,7 +5,7 @@ import TextBox from "./textbox";
 
 const GUESS_COUNT = 10;
 
-export default function SubmitGuesses() {
+export default function SubmitGuessesa() {
   let [guesses, setGuesses] = useState(Array(GUESS_COUNT).fill(""));
 
   const placeholders =

@@ -45,6 +45,11 @@ export default function Nav() {
                   <a className="">Team</a>
                 </Link>
               </li>
+              <li className="mx-6 hover:text-fuchsia-400 ">
+                <Link href="/orientation" aria-label="" title="">
+                  <a className="">Orientation</a>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
