@@ -97,7 +97,6 @@ export default function SubmitGuesses() {
         name: session.user.name,
         questionIndex,
         answer,
-        submissionTime: new Date().toISOString(),
       };
       const options = {
         method: "POST",
