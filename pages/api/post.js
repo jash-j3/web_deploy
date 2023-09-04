@@ -11,7 +11,7 @@ export default async function handler(req, res) {
       let date=new Date();
       let send={...req.body,time:date};
       console.log("SEND  ", send);
-      let myPost=await users.insertOne(req.body);
+      let myPost=await users.insertOne(send);
       //   let bodyObject = JSON.parse(req.body);
       //   let myPost = await users.insertOne(bodyObject);
       // let myPost = await users.insertOne(req.body);
