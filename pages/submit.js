@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useSession, signIn } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import Head from "next/head";
 import TextBox from "../components/textbox";
 import Layout from "../components/layout";
@@ -10,9 +10,11 @@ const QUESTION_COUNT = 7;
 
 export default function SubmitGuesses() {
   const [questions, setQuestions] = useState(Array(QUESTION_COUNT).fill(""));
+  const [try1, setTry1] = useState([""]);
   const [answered, setAnswered] = useState(Array(QUESTION_COUNT).fill(false));
   const [data1, setData1] = useState([]);
   const { data: session } = useSession();
+  const [clickedOnSubmit, setClickedOnSubmit] = useState(false);
   const router = useRouter();
 
   async function getanswers() {
@@ -28,29 +30,41 @@ export default function SubmitGuesses() {
       if (response.ok) {
         let data1 = await response.json();
         setData1(data1);
+        console.log("Data1  from get answers", data1);
       } else {
         console.error("Failed to get answer");
       }
     } catch (error) {
-      console.log("jg", error);
+      console.log("Error : ", error);
     }
   }
 
+  useEffect(() => { 
+    console.log(answered);
+  }, answered);
+
   useEffect(() => {
+    if (!session) {
+      router.push("/orientation");
+    }
     if (session && router.isReady) {
+      console.log("data1 from use effect", data1);
       getanswers();
     }
-  }, [router, session]);
+  }, [router, session, clickedOnSubmit]);
+
+  useEffect(() => {
+    setTry1((prev) => [...prev, ""]);
+  }, [clickedOnSubmit]);
 
   useEffect(() => {
     const a = Array(QUESTION_COUNT).fill(false);
     for (let answ = 0; answ < data1.length; answ++) {
-      console.log(data1[answ].questionIndex);
       a[data1[answ].questionIndex] = true;
     }
     setAnswered(a);
     console.log(questions);
-  }, [data1]);
+  }, [data1, clickedOnSubmit]);
 
   async function uploadAnswer(questionIndex, answer) {
     if (!session) {
@@ -65,6 +79,8 @@ export default function SubmitGuesses() {
         alert("You've already submitted an answer for this question");
         return;
       }
+
+      setClickedOnSubmit((prev) => !prev);
 
       setAnswered((answered) => {
         return [
@@ -114,39 +130,48 @@ export default function SubmitGuesses() {
       <Container>
         <>
           <div className="mb-10 content-center">
-            {questions.map((question, i) => {
-              return (
-                <div key={i} className="mb-5">
-                  <div className="pt-5 dark:text-gray-50/80">
-                    Question {i + 1}
-                  </div>
-                  {!answered[i] ? (
-                    <>
-                      <TextBox
-                        placeholder={`Enter your answer for question ${i + 1}`}
-                        value={question}
-                        onChange={(e) => {
-                          const updatedQuestions = [...questions];
-                          updatedQuestions[i] = e.target.value;
-                          setQuestions(updatedQuestions);
-                        }}
-                      />
-                      <button
-                        type="button"
-                        className="px-4 py-2 bg-neutral-900 dark:text-gray-50/80 rounded-3xl mt-2"
-                        onClick={() => uploadAnswer(i, questions[i])}
-                      >
-                        Submit Answer
-                      </button>
-                    </>
-                  ) : (
-                    <div className="text-green-500 mt-2">
-                      Answer submitted successfully!
+            {try1.length > 0 &&
+              questions.map((question, i) => {
+                if (i > 6) return;
+                return (
+                  <div key={i} className="mb-5">
+                    <div className="pt-5 dark:text-gray-50/80">
+                      Question {i + 1}
                     </div>
-                  )}
-                </div>
-              );
-            })}
+                    {!answered[i] ? (
+                      <>
+                        <TextBox
+                          placeholder={`Enter your answer for question ${
+                            i + 1
+                          }`}
+                          value={question}
+                          onChange={(e) => {
+                            const updatedQuestions = [...questions];
+                            updatedQuestions[i] = e.target.value;
+                            setQuestions(updatedQuestions);
+                          }}
+                        />
+                        <button
+                          type="button"
+                          className="px-4 py-2 bg-neutral-900 dark:text-gray-50/80 rounded-3xl mt-2"
+                          onClick={() => uploadAnswer(i, questions[i])}
+                        >
+                          Submit Answer
+                        </button>
+                      </>
+                    ) : (
+                      <div className="text-green-500 mt-2">
+                        Answer submitted:-{" "}
+                        {data1.map((item) => {
+                          if (item.questionIndex == i) {
+                            return item.answer;
+                          }
+                        })}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
           </div>
         </>
       </Container>

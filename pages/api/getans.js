@@ -9,6 +9,11 @@ export default async function handler(req, res) {
   
 
   switch (req.method) {
+    case "GET": {
+      const response = await users.find();
+      res.send(JSON.stringify(response))
+      res.end()
+    }
     
     case "POST": {
       await users.find({"email":req.body.email}).toArray(function(err, results){
